@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang='fr-fr'>
+  
+	<head>
+		<meta charset='utf-8'>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+		<link rel='stylesheet' href='flexbox.css'/>
+		<title>Flexbox</title>
+	</head>
+  
+	<body>
+		<header>
+			<div id='titre_principal'>
+				<h1><span class='chev'>&lt;!--</span> Flexbox </span><span class='chev'>--&gt;</span></h1>
+			</div>
+				<nav>
+					<ul>
+						<li style='border-left: none;'><a href='ACSSW.html'>Accueil</a></li>
+						<li><a href='balises.html'>Balises html</a></li>
+						<li><a href='codecss.html'>CSS</a></li>
+						<li><a href='gridlayout.html'>Grid layout</a></li>
+						<li><a href='flexbox.html'>Flexbox</a></li>
+					</ul>
+				</nav>
+		</header>
+		
+			<p class='p_center'>
+			Le module CSS3 Flexbox Layout fournit une façon efficace de disposer, aligner et distribuer l'espace entre les items d'un container, même lorsque leurs dimensions sont inconnues et/ou dynamiques - d'où le terme "flex".<br/>
+			L'idée principale est de donner à un élément contenant (container) la possibilité de changer les largeur et hauteur des éléments contenus (items), afin de remplir au mieux l'espace disponible, et de s'adapter à tous les terminaux et toutes les tailles d'écrans.<br/> 
+			Un container flexible permet aux items de s'étendre pour occuper la place disponible ou au contraire les réduit pour leur éviter de déborder.<br/>
+			Le plus important à retenir c'est qu'avec Flexbox la disposition n'est pas rigidement directionnelle, contrairement à ce que nous connaissons habituellement en CSS — où Block est basé sur un schéma vertical et Inline sur un schéma horizontal.<br/> 
+			Cela fonctionne bien pour les pages, mais ça manque de... flexibilité lorsqu'il s'agit d'applications complexes, en particulier lorsqu'il faut s'adapter aux changements d'orientation de device, redimensionner, étendre ou réduire l'espace, etc.<br/>
+			<br/>
+			Note importante:<br/>
+			Flexbox est plutôt adapté aux composants d'une application, de petite échelle, alors que les grilles conviennent à des mises en page complexes et à grande échelle. CSS Grid et Flexbox ont des usages différents mais sont faits pour travailler ensemble !
+			</p>
+		<main>
+			<h2>Un Conteneur, des éléments</h2>
+				<p>
+				Le principe de la mise en page avec Flexbox est simple : vous définissez un conteneur, et à l'intérieur vous placez plusieurs éléments. Imaginez un carton dans lequel vous rangez plusieurs objets : c'est le principe !<br/>
+				Sur une même page web, vous pouvez sans problème avoir plusieurs conteneurs (plusieurs cartons, si vous préférez). Ce sera à vous d'en créer autant que nécessaire pour obtenir la mise en page que vous voulez.<br/>
+				<br/>
+				Commençons par étudier le fonctionnement d'un carton (euh pardon, d'un conteneur).<br/>
+				<br/>
+				<img class='img_conteneur' src='images/conteneur.png' alt='Un conteneur et ses éléments'><br/>
+				Le conteneur est une balise HTML, et les éléments sont d'autres balises HTML à l'intérieur<br/>
+				<br/>
+				Par exemple avec:<br/>
+				<br/>
+				&lt;div id='conteneur' style='background-color: white; border: 2px solid black; padding: 20px;'&gt;<br/>
+				&emsp;&emsp;&lt;div class='element 1' style='background-color: red; width: 20%; padding: 10px;'>Element 1 &lt;/div&gt;<br/>
+				&emsp;&emsp;&lt;div class='element 2' style='background-color: green; width: 20%; padding: 10px;'>Element 2 &lt;/div&gt;<br/>
+				&emsp;&emsp;&lt;div class='element 3' style='background-color: blue; width: 20%; padding: 10px;'>Element 3 &lt;/div&gt;<br/>
+				&lt;/div&gt;<br/>
+				<br/>
+				<div id='conteneur' style='background-color: white; border: 2px solid black; padding: 20px;'>
+					<div class='element 1' style='background-color: red; width: 20%; padding: 10px;'>Element 1</div>
+					<div class='element 2' style='background-color: green; width: 20%; padding: 10px;'>Element 2</div>
+					<div class='element 3' style='background-color: blue; width: 20%; padding: 10px;'>Element 3</div>
+				</div>
+				Par défaut, les blocs se placent les uns en dessous des autres. Rien de bien nouveau, c'est le comportement normal dont nous avons l'habitude<br/>
+				</p>
+			<h3>Soyez Flex!</h3>
+				<p>
+				Découvrons maintenant Flexbox. Si je mets une (une seule !) propriété CSS, tout change. Cette propriété, c'est flex, voyons ce qu'il se passe si on l'applique au conteneur :<br/>
+				<br/>
+				#conteneur<br/>
+				{<br/>
+				&emsp;&emsp;display: flex;<br/>
+				}<br/>
+				<br/>
+				<div id='conteneur2' style='background-color: white; border: 2px solid black; padding: 20px;'>
+					<div class='element 1' style='background-color: red; width: 20%; padding: 10px;'>Element 1</div>
+					<div class='element 2' style='background-color: green; width: 20%; padding: 10px;'>Element 2</div>
+					<div class='element 3' style='background-color: blue; width: 20%; padding: 10px;'>Element 3</div>
+				</div>
+				... alors les blocs se placent par défaut côte à côte. Magique !<br/>
+				</p>
+			<h3>La direction</h3>
+				<p>
+				Flexbox nous permet d'agencer ces éléments dans le sens que l'on veut. Avec flex-direction , on peut les positionner verticalement ou encore les inverser. Il peut prendre les valeurs suivantes :<br/>
+				-row : organisés sur une ligne (par défaut) ;<br/>
+				-column : organisés sur une colonne ;<br/>
+				-row-reverse : organisés sur une ligne, mais en ordre inversé ;<br/>
+				-column-reverse : organisés sur une colonne, mais en ordre inversé.<br/>
+				<br/>
+				Exemple :<br/>
+				<br/>
+				#conteneur<br/>
+				{<br/>
+				&emsp;&emsp;display: flex;<br/>
+				&emsp;&emsp;flex-direction: column;<br/>
+				}<br/>
+				<br/>
+				<div id='conteneur3' style='background-color: white; border: 2px solid black; padding: 20px;'>
+					<div class='element 1' style='background-color: red; width: 20%; padding: 10px;'>Element 1</div>
+					<div class='element 2' style='background-color: green; width: 20%; padding: 10px;'>Element 2</div>
+					<div class='element 3' style='background-color: blue; width: 20%; padding: 10px;'>Element 3</div>
+				</div>
+				Les éléments sont de nouveau disposés en colonne.<br/>
+				<br/>
+				Essayons de tester l'ordre inversé maintenant, pour voir:<br/>
+				<br/>
+				#conteneur<br/>
+				{<br/>
+				&emsp;&emsp;display: flex;<br/>
+				&emsp;&emsp;flex-direction: column-reverse;<br/>
+				}<br/>
+				<br/>
+				<div id='conteneur4' style='background-color: white; border: 2px solid black; padding: 20px;'>
+					<div class='element 1' style='background-color: red; width: 20%; padding: 10px;'>Element 1</div>
+					<div class='element 2' style='background-color: green; width: 20%; padding: 10px;'>Element 2</div>
+					<div class='element 3' style='background-color: blue; width: 20%; padding: 10px;'>Element 3</div>
+				</div>
+				Les blocs sont maintenant dans l'ordre inverse, sans que nous ayons changé le code HTML, qui reste le même depuis le début.
+				</p>
+			<h3>Le retour à la ligne</h3>
+				Par défaut, les blocs essaient de rester sur la même ligne s'ils n'ont pas la place (ce qui peut provoquer des bugs de design, parfois). Si vous voulez, vous pouvez demander à ce que les blocs aillent à la ligne lorsqu'ils n'ont plus la place, avec flex-wrap  qui peut prendre ces valeurs:<br/>
+				-nowrap : pas de retour à la ligne (par défaut) ;<br/>
+				-wrap : les éléments vont à la ligne lorsqu'il n'y a plus la place ;<br/>
+				-wrap-reverse : les éléments vont à la ligne, lorsqu'il n'y a plus la place, en sens inverse.<br/>
+				<br/>
+				Voici l'effet que prennent les différentes valeurs:<br/>
+				<br/>
+				#conteneur<br/>
+				{<br/>
+				&emsp;&emsp;display: flex;<br/>
+				&emsp;&emsp;flex-wrap: nowrap;<br/>
+				}<br/>
+				<br/>
+				<div id='conteneur5' style='background-color: white; border: 2px solid black; padding: 20px;'>
+					<div class='element 1' style='background-color: red; width: 35%; padding: 10px;'>Element 1</div>
+					<div class='element 2' style='background-color: green; width: 35%; padding: 10px;'>Element 2</div>
+					<div class='element 3' style='background-color: blue; width: 35%; padding: 10px;'>Element 3</div>
+				</div>
+				Les éléments se resserent tant qu'ils peuvent.<br/>
+				<br/>
+				flex-wrap: wrap; :<br/>
+				<br/>
+				<div id='conteneur6' style='background-color: white; border: 2px solid black; padding: 20px;'>
+					<div class='element 1' style='background-color: red; width: 35%; padding: 10px;'>Element 1</div>
+					<div class='element 2' style='background-color: green; width: 35%; padding: 10px;'>Element 2</div>
+					<div class='element 3' style='background-color: blue; width: 35%; padding: 10px;'>Element 3</div>
+				</div>
+				Les éléments passent à la ligne.<br/>
+				<br/>
+				flex-wrap: wrap-reverse;
+				<br/>
+				<div id='conteneur7' style='background-color: white; border: 2px solid black; padding: 20px;'>
+					<div class='element 1' style='background-color: red; width: 35%; padding: 10px;'>Element 1</div>
+					<div class='element 2' style='background-color: green; width: 35%; padding: 10px;'>Element 2</div>
+					<div class='element 3' style='background-color: blue; width: 35%; padding: 10px;'>Element 3</div>
+				</div>
+				Les éléments passent à la ligne à l'envers.
+			<h3>Alignez-les !</h3>
+			<h2>Les propriétés flexbox</h2>
+			<h3>display: flex/inline-flex;</h3>
+				<p>
+				C'est ainsi qu'on définit un container flex, il est block par défaut ou inline selon la valeur donnée. Cela crée un contexte flex pour tous les descendants directs.<br/>
+				<br/>
+				-flex : Cette valeur génère un container flex, de niveau block, à l'intérieur de l'élément.<br/>
+				-inline-flex : Cette valeur génère un container flex, de niveau inline, à l'intérieur de l'élément.<br/>
+				<br/>
+				Notez que :<br/>
+				les propriétés columns- du module <a href="https://developer.mozilla.org/fr/docs/CSS/Colonnes_CSS3" target="_blank" rel="noopener">multi-colonnes</a> n'ont pas d'effet sur un container flex float, clear et vertical-align n'ont pas d'effet sur un item flex.<br/>
+				Pour comprendre en se divertissant, le mieux est de jouer avec ces valeurs sur des outils en ligne tels que <a href="http://bennettfeely.com/flexplorer/" target="_blank" rel="noopener">flexplorer</a>
+				</p>
+			<h3>flex-direction: row / row-reverse / column / column-reverse;</h3>
+				<p>
+				La propriété flex-direction établit l'axe principal.<br/>
+				<br/>
+				-row (valeur par défaut): les éléments sont placés en ligne de gauche à droite.<br/>
+				-row-reverse : inverse le sens.<br/>
+				-column : les éléments sont placés en colonnes du haut vers le bas.<br/>
+				-column-reverse : inverse le sens.<br/>
+				</p>
+			<h3>flex-wrap: nowrap / wrap / wrap-reverse;</h3>
+				<p>
+				Cette propriété définit si le container comprend une seule ligne ou plusieurs et la direction sur l'axe perpendiculaire (cross-axis), qui détermine la direction dans laquelle les nouvelles lignes seront empilées.<br/>
+				<br/>
+				-nowrap : (valeur par défaut) sur une seule ligne, de gauche à droite dans un système ltr, sinon l'inverse. La ligne peut déborder de son contenant.<br/>
+				-wrap : multiligne, de gauche à droite dans un système ltr, sinon l'inverse. Pas de débordement, on passe à la ligne.<br/>
+				-wrap-reverse : multiligne, de droite à gauche dans un système ltr, sinon l'inverse.<br/>
+				</p>
+			<h3>justify-content: flex-start / flex-end / center / space-between / space-around;</h3>
+				<p>
+				La propriété justify-content définit l'alignement le long de l'axe principal.<br/> 
+				Elle permet de distribuer l'espace excédentaire lorsque tous les items flex sur une ligne sont inflexibles ou lorsqu'ils ont atteint leur taille maximale.<br/> 
+				Elle contrôle aussi l'alignement des items lorsqu'ils débordent.<br/>
+				<br/>
+				-flex-start (par défaut) : les items sont regroupés en début de ligne<br/>
+				-flex-end : les items sont regroupés en fin de ligne<br/>
+				-center : les items sont centrés le long de la ligne<br/>
+				-space-between : les items sont répartis sur la ligne; le premier est collé du côté start, le dernier du côté end.<br/>
+				-space-around : les items sont répartis sur la ligne avec un espacement égal autour de chacun.<br/>
+				</p>
+			<h3>align-items: stretch / flex-start / flex-end / center / baseline;</h3>
+				<p>
+				Si nos éléments sont placés dans une direction horizontale (ligne), l'axe secondaire est... vertical.<br/> 
+				Et inversement : si nos éléments sont dans une direction verticale (colonne), l'axe secondaire est horizontal.<br/>
+				Avec align-items , nous pouvons changer leur alignement sur l'axe secondaire.<br/>
+				<br/>
+				stretch : les éléments sont étirés sur tout l'axe (valeur par défaut) ;
+				flex-start : alignés au début<br/>
+				flex-end : alignés à la fin<br/>
+				center : alignés au centre<br/>
+				baseline : alignés sur la ligne de base (semblable à flex-start)<br/>
+				</p>
+			
+		</main>
+	</body>
+ </html>

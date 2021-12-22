@@ -1,0 +1,248 @@
+@font-face 
+{
+	font-family: 'AlexBrush-Regular';
+	src: url('AlexBrush-Regular.ttf');
+}
+
+h2
+{
+	font-family: "Trebuchet MS", Arial, "Time New Roman", sans-serif;
+	color: white;
+	text-align: center;
+	background-color: #fdb97e;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: 4px solid mediumpurple;
+	border-bottom: 4px solid mediumpurple;
+	font-size: 1.6em;
+	width:100%;
+	margin-top: 5%;
+}
+
+h4
+{
+	background: white;
+	border-radius: 5px;
+	border: 1px solid mediumpurple;
+	box-shadow: 3px 3px 0px rebeccapurple;
+	color: mediumpurple;
+	text-align: center;
+	font-size: 1em;
+	width: 160px;
+	padding: 10px 0px 10px 0px;
+	margin: 10em 0em 0em 0em;
+	
+}
+
+body
+{
+	background-image: url("images/circuits3b.png");
+	background-attachment: scroll;
+	background-repeat: repeat;
+	margin: 0;
+	width: 100%;
+}
+
+.centerTable 
+{
+	margin: 0 auto;
+	empty-cells: hide;
+}
+
+table 
+{
+	table-layout: fixed;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-collapse: separate;
+	border-spacing: 6px;
+	width: 50%;
+}
+
+tr, td
+{
+	font-family: "Trebuchet MS", Arial, "Time New Roman", sans-serif;
+}
+
+td
+{
+	text-align: center;
+	background-color: white;
+	font-size: 1em;
+	font-weight: bold;
+	border: 1px solid mediumpurple;
+	box-shadow: 3px 3px 0px rebeccapurple;
+	height: 30px;
+	border-radius: 5px;
+	width: 20%;
+}
+
+th
+{
+	background-color: #fdb97e;
+	border: 2px solid mediumpurple;
+	font-size: 1.2em;
+	color: white;
+	height: 25px;
+	border-radius: 5px;
+}
+
+.chev
+{
+	font-size: 1.3em;
+}
+
+a
+{
+	color: mediumpurple;
+	text-decoration:none;
+}
+
+a:hover
+{
+	color: #fdb97e;
+}
+
+ul
+{
+	font-family: "Trebuchet MS", Arial, "Time New Roman", sans-serif;
+	list-style-type: none;
+	margin: 0px 10px 0px -20px;
+}
+
+img.photos
+{
+  margin-left: 0px;
+  border: 1px solid mediumpurple;
+  box-shadow: 3px 3px 0px rebeccapurple;
+}
+
+.retourmenu
+{
+	display: block;
+	font-family: Arial, "Trebuchet MS", "Time New Roman", sans-serif;
+	font-size: 0.7em;
+	text-align: center;
+	margin: 20em 10em 20em 10em;
+	color: mediumpurple;
+}
+
+img.bas
+{
+	width: 25px;
+	height: 25px;
+}
+
+#titre_principal
+{
+	display: inline-block;
+	color: white;
+	font-family: "Trebuchet MS"; Arial, "Time New Roman", sans-serif;
+	font-size: 0.8em;
+	width: 100%;
+	margin: 0;
+}
+
+/* Header */
+
+header
+{
+	background-color: mediumpurple;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 15px double white;
+	margin: 0% 0% 5% 0%;
+}
+
+/* Navigation */
+
+nav
+{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+}
+
+nav ul
+{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+nav li
+{
+	display: inline-block;
+	border-top: 2px solid #7458ad;
+	border-bottom: 2px solid #7458ad;
+	margin: 0px 0px 0px -4px;
+	padding: 0px;
+	border-left:1px solid black;
+}
+nav a
+{
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+	font-family: "Trebuchet MS", Arial, "Comic Sans MS", sans-serif;
+	text-decoration: none;
+}
+
+nav ul li a
+{
+	float:left; 
+	background:mediumpurple url('images/menuviolet1e.png') repeat-x;
+	width: 150px;
+	line-height:30px; /*hauteur de l'image de fond*/
+}
+
+nav ul li a:hover 
+{
+	background:mediumpurple url(images/menuviolet2d.png) repeat-x;
+	color:white;
+}
+
+@media all and (max-device-width: 480px)
+{
+    #titre_principal
+    {
+      font-size: 0.7em;
+    }
+  
+    table
+    {
+      width: 100%;
+    }
+	
+	td
+    {
+      font-size: 0.7em;
+    }
+    
+    nav ul li a
+	{
+		font-size: 0.7em;
+		width: 75px;
+		line-height: 15px; /*hauteur de l'image de fond*/
+	}
+}
+
+@media (orientation: landscape) and (max-device-width : 858px) 
+{
+	table
+    {
+		width: 100%;
+    }
+	
+	td
+    {
+		font-size: 1em;
+    }
+    
+    nav ul li a
+	{
+		width: 150px;
+		line-height: 30px; /*hauteur de l'image de fond*/
+	}
+}

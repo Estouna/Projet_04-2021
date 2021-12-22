@@ -1,0 +1,669 @@
+/*___________________________________________________________________________________________________________________/POLICES/___________________________________________________________________________________________________________________*/
+
+
+
+@font-face{font-family: 'Roboto-Light'; src: url('Polices/Roboto-Light.ttf');}
+@font-face{font-family: 'Roboto-LightItalic'; src: url('Polices/Roboto-LightItalic.ttf');}
+@font-face{font-family: 'Roboto-Regular'; src: url('Polices/Roboto-Regular.ttf');}
+@font-face{font-family: 'Roboto-Italic'; src: url('Polices/Roboto-Italic.ttf');}
+@font-face{font-family: 'Roboto-Medium'; src: url('Polices/Roboto-Medium.ttf');}
+@font-face{font-family: 'Roboto-Condensed'; src: url('Polices/Roboto-Condensed.ttf');}
+@font-face{font-family: 'Roboto-CondensedItalic'; src: url('Polices/Roboto-CondensedItalic.ttf');}
+@font-face{font-family: 'Roboto-BoldCondensed'; src: url('Polices/Roboto-BoldCondensed.ttf');}
+@font-face{font-family: 'Roboto-BoldCondensedItalic'; src: url('Roboto-BoldCondensedItalic.ttf');}
+@font-face{font-family: 'Roboto-Bold'; src: url('Polices/Roboto-Bold.ttf');}
+
+
+/*___________________________________________________________________________________________________________________/FIN POLICES/___________________________________________________________________________________________________________________*/
+
+body
+{
+	background-image: url("images/circuits3b.png");
+	background-attachment: scroll;
+	background-repeat: repeat;
+	margin: 0;
+	width: 100%;
+}
+
+/*___________________________________________________________________________________________________________________/TITRES/___________________________________________________________________________________________________________________*/
+#titre_principal{
+display: inline-block;
+color: white;
+font-family: "Roboto-Light", Arial, "Time New Roman", sans-serif;
+font-size: 0.8em;
+width: 100%;
+margin: 0;
+}
+.chev{
+font-size: 1.3em;
+color: white;
+}
+header{
+background-image: -webkit-linear-gradient(to top, #bb9afe 0%, #8868cb 40%);
+background-image: linear-gradient(to bottom, #bb9afe 0%, #8868cb 40%);
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 15px double white;
+margin: 0% 0% 0% 0%;
+}
+h2
+{
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	color: white;
+	text-align: center;
+	background-color: mediumpurple;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-top: 3px double white;
+	border-bottom: 3px double white;
+	font-size: 1.7em;
+	width:100%;
+	margin: 0em 0em 8em 0em;
+}
+h4
+{
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	font-size: 1.1em;
+	background: white;
+	border-radius: 5px;
+	border: 2px solid mediumpurple;
+	box-shadow: 2px 2px 0px rebeccapurple;
+	color: mediumpurple;
+	text-align: center;
+	width: 180px;
+	padding: 15px 0px 15px 0px;
+	margin: 5em 0em 2em 0em;	
+}
+/*___________________________________________________________________________________________________________________/FIN TITRES/___________________________________________________________________________________________________________________*/
+
+
+
+/*___________________________________________________________________________________________________________________/img, a, a:hover etc/___________________________________________________________________________________________________________________*/
+a{color: mediumpurple; text-decoration:none;}
+a:hover{color: #fdb97e;}
+
+img.photos
+{
+  margin-left: 0px;
+  border: 1px solid mediumpurple;
+  box-shadow: 3px 3px 0px rebeccapurple;
+}
+/*Icône retour haut de page*/
+.retourmenu
+{
+	display: block;
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	font-size: 0.7em;
+	text-align: center;
+	margin: 10em 10em 20em 10em;
+	color: mediumpurple;
+}
+/*Icône retour haut de page*/
+img.bas
+{
+	width: 25px;
+	height: 25px;
+}
+/*Mots blockquote, DOCTYPE et command plus petits*/
+/*
+.miniblockquote
+{
+	font-family: "Roboto-BoldCondensed", Arial, "Time New Roman", sans-serif;
+	font-size: 0.9em;
+}
+.miniDOCcommand
+{
+	font-family: "Roboto-BoldCondensed", Arial, "Time New Roman", sans-serif;
+	font-size: 0.9em;
+}
+*/
+/*___________________________________________________________________________________________________________________/img, a, a:hover etc/___________________________________________________________________________________________________________________*/
+
+
+
+
+/*___________________________________________________________________________________________________________________/SECTION/___________________________________________________________________________________________________________________*/
+section
+{
+	margin: 0% 25% 0% 25%;
+}
+
+section P
+{
+	font-family: "Roboto-Medium", Arial, "Time New Roman", sans-serif;
+	font-size: 0.8em;
+	Background: white;
+	padding: 30px 0px 30px 40px;
+	border: 3px double mediumpurple;
+	border-radius: 10px;
+	line-height: 1.7em;
+}
+/*___________________________________________________________________________________________________________________/FIN SECTION/___________________________________________________________________________________________________________________*/
+
+
+
+/*___________________________________________________________________________________________________________________/MENU SOMMAIRE HAUT DE PAGE/___________________________________________________________________________________________________________________*/
+.menusommaire{
+	padding:2% 0% 2% 0%;
+	background: rgba(147, 112, 219, 0.5);
+	position: relative;
+	z-index: 50;
+	text-align: center;
+	width:100%;
+	margin: 0% 0% 0%;
+}
+.somm1, .somm2, .somm3{
+	display: inline-table;
+	width: 30%;
+	border-collapse: separate;
+	empty-cells: hide;
+	vertical-align:top;
+	border-spacing: 6px 6px;
+	background: rgba(255, 255, 255, 0.4);
+}
+.somm1 td, .somm2 td, .somm3 td{
+	height: 25px;
+	font-size: 0.8em;
+	width: 20%;
+}
+.somm1 th, .somm2 th, .somm3 th{
+	height: 20px;
+	font-size: 0.8em;
+	width: 20%;
+	border-radius: 50px;
+}
+.somm1{
+	margin: 0% 0% 0% 0%;
+	padding: 10px 10px 49px 40px;
+	border-radius: 10px 0px 0px 10px;
+}
+.somm2{
+	margin: 0% 0% 0% -0.26%;
+	padding: 10px 10px 49px 10px;
+}
+.somm3{
+	margin: 0% 0% 0% -0.26%;
+	padding: 10px 40px 19px 10px;
+	border-radius: 0px 10px 10px 0px;
+}
+/*___________________________________________________________________________________________________________________/FIN MENU SOMMAIRE HAUT DE PAGE/___________________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+/*___________________________________________________________________________________________________________________/MENU SOMMAIRE HAUT DE PAGE SMARTPHONE/___________________________________________________________________________________________________________________*/
+.centerTable 
+{
+	display: none;
+	margin: 0 auto;
+	empty-cells: hide;
+	table-layout: fixed;
+}
+
+/*
+table 
+{
+	table-layout: fixed;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	border-collapse: separate;
+	border-spacing: 6px;
+	width: 50%;
+}
+
+tr, td
+{
+	font-family: "Trebuchet MS", Arial, "Time New Roman", sans-serif;
+}
+
+td
+{
+	text-align: center;
+	background-color: white;
+	font-size: 1em;
+	font-weight: bold;
+	border: 1px solid mediumpurple;
+	box-shadow: 3px 3px 0px rebeccapurple;
+	height: 30px;
+	border-radius: 5px;
+	width: 20%;
+}
+
+th
+{
+	background-color: #fdb97e;
+	border: 2px solid mediumpurple;
+	font-size: 1.2em;
+	color: white;
+	height: 35px;
+	border-radius: 5px;
+}
+*/
+/*___________________________________________________________________________________________________________________/FIN MENU SOMMAIRE HAUT DE PAGE SMARTPHONE/___________________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+/*___________________________________________________________________________________________________________________/MENU CACHE/___________________________________________________________________________________________________________________*/
+.menu
+{
+	position: fixed;
+	z-index: 100;
+	right: -39em;								/*Cache le menu (plus la valeur négative est élévée plus le menu est caché sur la droite)*/
+	top: 5%;									/*Position du menu par rapport au haut de la fenêtre*/
+	width: 60em;
+	background: rgba(147, 112, 219, 0.7);		/*Couleur rgb/255 du mediumpuple et opacité en dernier */
+	border: 6px double #8364c3;
+	border-radius: 40px 0px 0px 40px;
+	margin: 0em -19em 0em 0em;					/*margin: 0em 0em(règle la distance à laquelle le menu sort quand il est activé) 0em 0em;*/
+	padding: 1em 0em 1em 0em;					/*padding: 0em 0em 0em 0em;*/
+	margin-top: 0px;
+	transition: 1s
+}
+.menu:hover { right: -20px }					/*Règle aussi la distance à laquelle le menu sort quand il est activé*/
+
+ 
+.table1, .table2, .table3{
+	display: inline-table;
+	border-collapse: separate;
+	empty-cells: hide;
+	vertical-align:top;
+	-moz-user-select: none; /* Firefox */
+	-webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+	-ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+	user-select: none; /* Propriété standard */
+}
+
+.table1
+{
+	margin: 0% 0% 0% 5%;
+	padding: 0px;
+	width: 30%;
+}
+
+.table2
+{
+	margin: 0% 0% 0% 0%;
+	padding: 0px;
+	width: 30%;
+}
+
+.table3
+{
+	margin: 0% 0% 0% 0%;
+	padding: 0px;
+	width: 30%;
+}
+
+.table1 tr, .table2 tr, .table3 tr
+{
+	padding:0px;
+	margin: 0px;
+	text-align: center;
+}
+
+/*Aligne horizontalement le menu. Possibilité de règler la largeur des titres des menus(width:). Penser à mettre width: 100%; à ul li pour adapter les sous menus. position:relative; règle les sous menus */
+.table1 td, .table2 td, .table3 td
+{
+	position:relative;
+	margin: 0% 0% 0% 0%;
+	padding: 0px;
+	
+}
+
+/*position: absolute; fixe le menu. -moz-transition: -webkit-transition: transition: = temps déroulement menus aller/retour*/
+.table1 tr, .table2 tr, .table3 tr
+{
+	position:relative;
+	z-index: 1000;
+	max-height:0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+}
+.menu:hover { right: -20px }					/*Règle aussi la distance à laquelle le menu sort quand il est activé*/
+
+
+
+
+
+
+table 
+{
+	table-layout: fixed;
+	border-collapse: separate;
+	border-spacing: 3px 3px;
+	width: 100%
+}
+
+tr, td
+{
+	font-family: "Roboto-Medium", Arial, "Time New Roman", sans-serif;
+}
+
+td
+{
+	text-align: center;
+	background-color: white;
+	font-size: 0.7em;
+	border: 1px solid mediumpurple;
+	box-shadow: 1px 1px 1px rebeccapurple;
+	height: 20px;
+	width: 20%;
+	border-radius: 5px;
+}
+
+th
+{
+	background-color: #fdb97e;
+	border: 1px solid mediumpurple;
+	font-size: 0.7em;
+	color: white;
+	height: 15px;
+	width: 20%;
+	border-radius: 5px;
+}
+/*___________________________________________________________________________________________________________________/FIN MENU CACHE/___________________________________________________________________________________________________________________*/
+
+
+
+/*___________________________________________________________________________________________________________________/MENU TITRE/___________________________________________________________________________________________________________________*/
+nav
+{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+}
+
+nav ul
+{
+	font-size: 0.9em;
+	font-family: "Roboto-Condensed", Arial, "Comic Sans MS", sans-serif;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+nav li
+{
+	display: inline-block;
+	border-top: 1px solid #7458ad;
+	border-bottom: 1px solid #7458ad;
+	margin: 0px 0px 0px -4px;
+	padding: 0px;
+	border-left:1px solid black;
+}
+nav a
+{
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+nav ul li a
+{
+	float:left; 
+	background-image: -webkit-linear-gradient(to top, #e3d6ff 0%, #8868cb 60%);
+	background-image: linear-gradient(to bottom, #e3d6ff 0%, #8868cb 60%);
+	width: 150px;
+	line-height:25px; /*hauteur de l'image de fond*/
+}
+
+nav ul li a:hover 
+{
+	background:mediumpurple url(images/menuviolet2d.png) repeat-x;
+	color:white;
+}
+/*___________________________________________________________________________________________________________________/FIN MENU TITRE/___________________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*___________________________________________________________________________________________________________________/MEDIA QUERIES/___________________________________________________________________________________________________________________*/
+
+
+	/*___________________________________________________________________________________________________________________/500px/___________________________________________________________________________________________________________________*/
+@media all and (max-device-width: 500px)
+{
+    #titre_principal{font-size: 0.7em;}
+	
+	/*Menu tableau*/
+	
+  .table1 a, .table2 a{color: black; text-decoration:none;}
+	/*Mots blockquote, DOCTYPE et command plus petits*/
+	.miniblockquote{
+	font-family: "Roboto-BoldCondensed", Arial, "Time New Roman", sans-serif;
+	font-size: 1em;
+	}
+	.miniDOCcommand{
+	font-family: "Roboto-BoldCondensed", Arial, "Time New Roman", sans-serif;
+	font-size: 0.9em;
+	}
+	a{color: black; text-decoration:none;}
+	.table1, .table2{
+	  display: inline-table;
+		letter-spacing: -0.5px;
+	}
+   .table1{
+		margin: 3% 0% 0% 0%;
+		padding: 0px;
+		width: 50%;
+  }
+	.table2{
+		margin: 3% 0% 0% -1.5%;
+		padding: 0px;
+		width: 50%;
+	}
+	.table1 td, .table2 td{
+    font-family: "Roboto-BoldCondensed", Arial, "Time New Roman", sans-serif;
+    font-size: 0.6em;
+    height: 15px;
+		width: 20%;
+    }
+	.table1 th, .table2 th{
+    font-family: "Roboto-BoldCondensed", Arial, "Time New Roman", sans-serif;
+		font-size: 0.6em;
+		height: 10px;
+		width: 20%;
+		border: none;
+		border-radius: 20px;
+	}
+	
+	
+	table{
+		table-layout: fixed;
+		border-spacing: 1.5px 1.5px;
+		width: 100%
+	}
+	td{
+		font-size: 0.8em;
+		height: 15px;
+		width: 20%;
+    }
+	th{
+		font-size: 0.8em;
+		height: 10px;
+		width: 20%;
+		border: none;
+		border-radius: 20px;
+	}
+	.menu{
+	top: -35.5em; /*Cache le menu (plus la valeur négative est élévée plus le menu est caché sur la droite)*/
+	left: 0%;
+	width: 24em;
+	border-radius: 0px 0px 40px 40px;
+	margin: 1em 0em 0em 0em; /*margin: 0em 0em(règle la distance à laquelle le menu sort quand il est activé) 0em 0em;*/
+	padding: 1em 0em 2.5em 0em;
+	transition: 0.7s
+	}
+	.table1 tr, .table2 tr{
+	position:relative;
+	z-index: 1000;
+	max-height:0;
+	top: 0;
+	bottom: 0;
+	overflow:hidden;
+	}
+  .menu:hover { top: -20px }
+	/*FIN menu tableau*/
+	
+	
+	/*MENU SOMMAIRE*/
+	.menusommaire{
+	  display: none;
+	width:100%;
+	margin: 0% 0% 0%;
+	}
+	.somm1 td, .somm2 td, .somm3 td{
+	height: 15px;
+	font-size: 0.4em;
+	width: 25%;
+	}
+	.somm1 th, .somm2 th, .somm3 th{
+	height: 15px;
+	font-size: 0.4em;
+	width: 25%;
+	}
+	.somm1, .somm2, .somm3{
+	width: 31%;
+	border-spacing: 2px 2px;
+	padding: 0%;
+	border: none;
+	}
+	.somm1{
+	margin: 0% 0% 0% 0%;
+	padding: 0px;
+	}
+	.somm2{
+	margin: 0% 0% 0% 0%;
+	padding: 0px;
+	}
+	.somm3{
+	margin: 0% 0% 0% 0%;
+	padding: 0px;
+	}
+	/*FIN MENU SOMMAIRE*/
+	
+	
+	/*MENU TITRE*/
+    nav ul li a
+	{
+		font-size: 0.7em;
+		width: 75px;
+		line-height: 15px; /*hauteur de l'image de fond*/
+	}
+	/*FIN MENU TITRE*/
+	
+	/*SECTION*/
+	section{
+	margin: 0% 1% 0% 1%;
+	}
+	section P{
+	font-size: 0.8em;
+	padding: 30px 5px 30px 30px;
+	line-height: 1.7em;
+	}
+	section h4{
+	font-size: 1em;
+	}
+	/*FIN SECTION*/
+	
+}
+	/*___________________________________________________________________________________________________________________/FIN 500px/___________________________________________________________________________________________________________________*/
+	
+	
+	
+	
+	
+	
+	/*___________________________________________________________________________________________________________________/900px/___________________________________________________________________________________________________________________*/
+@media (orientation: landscape) and (max-device-width : 900px) 
+{
+	#titre_principal{font-size: 0.7em;}
+	
+	.menu{
+		display: none;
+	}
+	
+	/*MENU SOMMAIRE*/
+	.menusommaire{
+		width:100%;
+		margin: 0%;
+		padding: 0%
+	}
+	
+	.somm1 td, .somm2 td, .somm3 td{
+	width: 20%;
+	height: 15px;
+	font-size: 0.6em;
+	}
+	.somm1 th, .somm2 th, .somm3 th{
+	height: 15px;
+	font-size: 0.5em;
+	}
+	.somm1, .somm2, .somm3{
+	  width:100%
+	  border-spacing: 1px 1px;
+	  padding: 0%;
+	}
+	/*FIN MENU SOMMAIRE*/
+	
+	/*MENU TITRE*/
+    nav ul li a
+	{
+		font-size: 0.8em;
+		width: 150px;
+		line-height: 30px; /*hauteur de l'image de fond*/
+	}
+	/*FIN MENU TITRE*/
+	
+	/*SECTION*/
+	section{
+	margin: 0% 10% 0% 10%;
+	}
+	section P{
+	font-size: 0.8em;
+	padding: 30px 5px 30px 30px;
+	line-height: 1.7em;
+	}
+	section h4{
+	font-size: 0.8em;
+	}
+	/*FIN SECTION*/
+	
+	
+}
+	/*___________________________________________________________________________________________________________________/FIN 900px/___________________________________________________________________________________________________________________*/
+	
+	
+/*___________________________________________________________________________________________________________________/FIN MEDIA QUERIES/___________________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+

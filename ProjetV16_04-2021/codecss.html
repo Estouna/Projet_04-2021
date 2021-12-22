@@ -1,0 +1,908 @@
+<!DOCTYPE html>
+
+<html lang='fr-fr'>
+
+	<head>
+		<meta charset="utf-8"/>
+		<meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+		<link rel="stylesheet" href="codecss.css"/>
+		<title>Propriétés CSS3</title>
+	</head>
+	
+	<body>
+	<!--MENU TITRE-->
+		<header>
+			<div id="titre_principal">
+				<h1 id="retourmenu"><span class='titrechev'>/*</span> Les propriétés CSS3 <span class='titrechev'>*/</span></h1>
+			</div>
+				<nav class='nav1'>
+					<ul>
+						<li style='border-left: none;'><a href='ACSSW.html' style='display:block'>Accueil</a></li>
+						<li><a href='balises.html' style='display:block'>Balises html</a></li>
+						<li><a href='codecss.html' style='display:block'>CSS</a></li>
+						<li><a href='gridlayout.html' style='display:block'>Grid layout</a></li>
+						<li><a href='flexbox.html' style='display:block'>Flexbox</a></li>
+						<!-- rel="noopener" Pour empêcher qu'un objet Javascript windows.opener soit utilisé pour la page ouverte -->
+					</ul>
+				</nav>
+		</header>
+		
+		
+	<!--MENU DEROULANT-->
+		<div class='menu'>
+				<ul class="menu-der">
+					<li><a>Formatage  texte</a>
+						<ul>
+							<li><a href="#police">Police, taille, ...</a></li>
+							<li><a href="#align">Alignement</a></li>
+						</ul>
+					</li>
+					<li><a>Couleur et fond</a>
+						<ul>
+							<li><a href="#couleur">Couleur</a></li>
+							<li><a href="#fond">Image de fond</a></li>
+						</ul>
+					</li>
+					<li><a>Boîtes (blocks)</a>
+						<ul>
+							<li><a href="#dimensions">Dimensions</a></li>
+							<li><a href="#bordures">Bordures</a></li>
+							<li><a href="#margesextint">Marges ext/int</a></li>
+						</ul>
+					</li>
+					<li><a>Positionnement</a>
+						<ul>
+							<li><a href="#affichage">Affichage</a></li>
+							<li><a href="#positionnement">Positionnement</a></li>
+						</ul>
+					</li>
+					</ul>
+					
+				<ul class="menu-der2">
+					<li><a>Listes</a>
+						<ul>
+							<li><a href="#typeliste">Type, position...</a></li>
+						</ul>
+					</li>
+					<li><a>Tableaux</a>
+						<ul>
+							<li><a href="#typebordure">Type de bordure</a></li>
+							<li><a href="#cellules">Cellules vides</a></li>
+							<li><a href="#positiontitre">Position du titre</a></li>
+						</ul>
+					</li>
+					
+					<li><a>Autres propriétés</a>
+						<ul>
+							<li><a href="#curseur">Curseur de souris</a></li>
+							<li><a href="#commentaires">Commentaire</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+				
+				
+				
+	<!--SOMMAIRE-->		
+		<nav>
+			<ul class='navul1'>
+				<li><a href="#format">Formatage de texte</a></li>
+				<li><a href="#police"><em>Police, taille et décorations</em></a></li>
+				<li><a href="#align"><em>Alignement</em></a></li>
+			</ul>
+			<ul class='navul2'>
+				<li><a href="#couleurfond">Propriétés de couleur et de fond</a></li>
+				<li><a href="#couleur"><em>Couleur</em></a></li>
+				<li><a href="#fond"><em>Image de fond</em></a></li>
+			</ul>
+			<ul class='navul3'>
+				<li><a href="#propriboites">Propriétés des boîtes</a></li>
+				<li><a href="#dimensions"><em>Dimensions</em></a></li>
+				<li><a href="#bordures"><em>Bordures</em></a></li>
+				<li><a href="#margesextint"><em>Marges extérieures/intérieures</em></a></li>
+			</ul>
+			<ul class='navul4'>
+				<li><a href="#position">Propriétés d'affichage et de positionnement</a></li>
+				<li><a href="#affichage"><em>Affichage</em></a></li>
+				<li><a href="#positionnement"><em>Positionnement</em></a></li>
+			</ul>
+			<ul class='navul5'>
+				<li><a href="#listes">Listes</a></li>
+				<li><a href="#typeliste"><em>Type, position, image...</em></a></li>
+			</ul>
+			<ul class='navul6'>
+				<li><a href="#tableaux">Tableaux</a></li>
+				<li><a href="#typebordure"><em>Type de bordure</em></a></li>
+				<li><a href="#cellules"><em>Cellules vides</em></a></li>
+				<li><a href="#positiontitre"><em>Position du titre</em></a></li>
+			</ul>
+			<ul class='navul7'>
+				<li><a href="#autres">Autres propriétés</a></li>
+				<li><a href="#curseur"><em>Curseur de souris</em></a></li>
+				<li><a href="#commentaires"><em>Commentaire</em></a></li>
+			</ul>
+		</nav>
+		
+		
+
+	
+	<section class='sectionviolet'>
+		<h2 id='format'>Propriétés de formatage de texte</h2>
+			<h3 id='police'>Police, taille et décorations</h3>
+			<h4>font-family: police1, police2, police3, police4;<br/>
+				<em>(Nom de police)</em></h4>
+				<p>
+				Indiquer les noms de polices possibles par ordre de préférence :<br/>
+				- font-family: police1, police2, police3, police4;<br/>
+				<br/>
+				Si le navigateur a la police 1, il l'utilisera. Sinon, il regarde s'il a la police 2, puis la police 3...
+				Utilisez des guillemets si le nom de la police comporte des espaces. Essayez de toujours mettre comme
+				dernière police possible "serif" ou "sans-serif":<br/>
+				- font-family: "Arial Black", Arial, Verdana, sans-serif;
+				</p>
+			<h4>font-size: 1.1em;<br/>
+				<em>(Taille du texte)</em></h4>
+				<p>
+				Indiquer la taille du texte, plusieurs unités sont possibles :<br/>
+				- px (pixels)<br/>
+				- % (pourcentage, 100% = normal)<br/>
+				- em (taille relative, 1.0 = normal)<br/>
+				- ex (taille relative à la hauteur de la lettre "x". 1.0 = normal)<br/>
+				<br/>
+				Nom de taille :<br/>
+				- xx-small (très très petit)<br/>
+				- x-small (très petit)<br/>
+				- small (petit)<br/>
+				- medium (moyen)<br/>
+				- large (grand)<br/>
+				- x-large (très grand)<br/>
+				- xx-large (très très grand)<br/>
+				</p>
+			<h4>font-weight: bold;<br/>
+				<em>(Texte en gras)</em></h4>
+				<p>
+				- bold (gras)<br/>
+				- bolder (plus gras)<br/>
+				- lighter (plus fin)<br/>
+				- normal (normal par défaut)<br/>
+				</p>
+			<h4>font-style: italic;<br/>
+				<em>(Texte en italique)</em></h4>
+				<p>
+				- italic (italique)<br/>
+				- oblique (autre façon de mettre en italique)<br/>
+				- normal (normal par défaut)<br/>
+				</p>
+			<h4>text-decoration: underline;<br/>
+				<em>(Décoration du texte)</em></h4>
+				<p>
+				- underline (souligné)<br/>
+				- overline (ligne au-dessus)<br/>
+				- line-through (barré)<br/>
+				- blink (clignotant)<br/>
+				- none (normal par défaut)<br/>
+				</p>
+			<h4>font-variant: small-caps;<br/>
+				<em>(Texte en petites capitales)</em></h4>
+				<p>
+				- small-caps (petites capitales)<br/>
+				- normal (normal par défaut)<br/>
+				</p>
+			<h4>text-transform: uppercase;<br/>
+				<em>(Texte en capitales)</em></h4>
+				<p>
+				- uppercase (tout mettre en majuscules)<br/>
+				- lowercase (tout mettre en minuscules)<br/>
+				- capitalize (début des mots en majuscules)<br/>
+				- none (normal par défaut)<br/>
+				</p>
+			<h4>font: Arial, bold, 16px;<br/>
+				<em>(méga-propriété de police)</em></h4>
+				<p>
+				Indiquez dans n'importe quel ordre des valeurs possibles pour font-family, font-weight, font-style, fontsize, font-variant.<br/>
+				Vous n'êtes pas obligés de mettre une valeur pour chacune de ces propriétés.<br/>
+				font:Arial, bold, 16px; mettra votre texte en Arial, gras, 16 pixels<br/>
+				</p>
+				
+					<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			<h3 id='align'>Alignement</h3>
+			<h4>text-align: center;<br/>
+				<em>(Alignement horizontal)</em></h4>
+				<p>
+				- left (à gauche par défaut)<br/>
+				- center (centré)<br/>
+				- right (à droite)<br/>
+				- justify (texte justifié prend toute la largeur de la page)<br/>
+				</p>
+			<h4>vertical-align: top;<br/>
+				<em>(Alignement vertical)</em></h4>
+				<p>
+				A utiliser dans des cellules de tableau<br/>
+				- top (en haut)<br/>
+				- middle (au milieu)<br/>
+				- bottom (en bas)<br/>
+				</p>
+			<h4>line-height: 4px;<br/>
+				<em>(Hauteur de ligne)</em></h4>
+				<p>
+				Indiquer une valeur en pixels (px) ou en pourcentage (%)
+				</p>
+			<h4>letter-spacing: -2px;<br/>
+				<em>(Interlettrage)</em></h4>
+				<p>
+				Indiquer une valeur en px ou em.
+				Une valeur positive augmente l'espace, une valeur négative le réduit.
+				</p>
+			<h4>word-spacing: 2px;<br/>
+				<em>(Espace entre les mots)</em></h4>
+				<p>
+				Indiquer une valeur en px, em, %...
+				Une valeur positive augmente l'espace, une valeur négative le réduit.
+				</p>
+			<h4>text-indent: 20px;<br/>
+				<em>(Alinéa)</em></h4>
+				<p>
+				Indiquez une valeur en pixels (px) pour définir l'alinéa de vos paragraphes<br/>
+				Vos paragraphes commenceront avec le retrait que vous avez indiqué<br/>
+				</p>
+			<h4>white-space: pre;<br/>
+				<em>(Césure)</em></h4>
+				<p>
+				- normal (le passage à la ligne est automatique par défaut)<br/>
+				- nowrap (pas de passage à la ligne automatique, sauf si une balise xHTML comme &lt;br /&gt; est présente)<br/>
+				- pre (le passage à la ligne se fait comme le texte saisi dans le code source comme balise xHTML &lt;pre&gt;)<br/>
+				</p>
+				
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+	</section>
+
+	
+	<section class='sectionbleu'>
+		<h2 id='couleurfond'>Propriétés de couleur et de fond</h2>
+			<h3 id='couleur'>Couleur</h3>
+			<h4>color: #CC48A1;<br/>
+				<em>(Couleur de texte)</em></h4>
+				<p>
+				Indiquer une couleur avec l'une des méthodes suivantes :<br/>
+				- en indiquant le nom de la couleur en anglais (black, blue, green, white, red...)<br/>
+				- en indiquant la couleur en RGB : rgb (128, 255, 0)<br/>
+				- en indiquant la couleur en hexadécimal (#CC48A1)<br/>
+				Chaque couleur à un code hexadécimal. Certains logiciels de dessin, comme Photoshop, Gimp et Paint.NET, vous indiquent les couleurs en hexadécimal.<br/> 
+				Il vous est alors facile de copier-coller le code hexadécimal d'une couleur dans votre fichier CSS.
+				</p>
+			<h4>background-color: blue;<br/>
+				<em>(Couleur de fond)</em></h4>
+				<p>
+				Spécifie la couleur de l’arrière-plan:<br/>
+				- transparent: La valeur initiale (ou « par défaut ») du fond d'un élément est transparent, ce qui permet à un élément de venir se superposer à un autre, tout en permettant de toujours voir le fond par transparence. 
+				La plupart du temps, ce ne sera pas utile de le déclarer, sauf si on souhaite annuler une couleur de fond qui aurait été préalablement définie pour cet élément.<br/>
+				- inherit: permet à l'élément d'hériter de la propriété background-color de son parent. On croit souvent par erreur que les couleurs de fond sont héritées par défaut, mais ce n'est pas le cas ; et lorsque l'on voit 
+				la couleur de fond du parent s'appliquer sur l'élément enfant, c'est parce que le fond de ce dernier est transparent.<br/>
+				(Valeurs: couleurs; transparent; inherit;) 
+				</p>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+			<h3 id='fond'>Image de fond</h3>
+				<p class='pfondback'>
+				La propriété CSS background permet de définir toutes les propriétés de style de fond. La propriété background comprend les propriétés suivantes :
+				</p>
+			<h4>background: ...;<br/>
+				<em>(mega-propriétés de fond)</em></h4>
+				<p>
+				Indiquer une ou plusieurs valeurs issues des propriétés background-image, background-repeat, background-attachment, background-position<br/>
+				L'ordre des valeurs n'a pas d'importance et vous n'êtes pas obligés de mettre toutes les valeurs de ces propriétés (au moins une suffit)<br/>
+				Exemple: background:url("images/fond.png") no-repeat fixed top right;<br/>
+				/* Le fond fond.png reste affiché en haut à droite de l'écran et n'est pas répété */<br/>
+				Pour règler l'opacité du fond sans toucher au premier plan (texte, images etc), utiliser les couleurs en rgba (red, green, blue, alpha) ou lcha (lightness, chroma, hue, alpha). Alpha est la valeur d'opacité de 0 (0% totalement transparent) à 1 (100% totalement opaque).<br/>
+				Exemples: <br/>
+				- background: rgba(147, 112, 219, 0.3);<br/>
+				- background: lch(56.2% 83.6 357.4 / 0.93);
+				
+				</p>
+			<h4>background-attachment: scroll;<br/>
+				<em>(Défilement fond)</em></h4>
+				<p>
+				La propriété background-attachment définit si l'image du fond est fixe ou si elle défilera avec le reste de la page.<br /> 
+				(Valeurs: fixed; et scroll;)
+				</p>
+			<h4>background-blend-mode: multiply;<br/>
+				<em>(fond fusionné)</em></h4>
+				<p>	
+				La propriété CSS background-blend-mode définit la façon dont les images d'arrière-plan doivent être fusionnées entre elles et avec la couleur d'arrière-plan.<br/> 
+				(Valeurs: normal; multiply; hard-light; difference;)
+				</p>
+			<h4>background-clip: border-box;<br/>
+				<em>(limites de la zone d'arrière plan)</em></h4>
+				<p>		
+				La propriété d'Arrière-plan CSS background-clip permet de gérer les limites de la zone d'arrière plan à l'intérieur de l'élément. background-clip va influencer l'affichage de l'image d'arrière-plan ou de la couleur d'arrière-plan, 
+				déclarées avec la propriété CSS background-image, background-color ou background.<br/>
+				(Valeurs: border-box; padding-box; content-box; text;)
+				</p>
+			<h4>background-color: #CC48A1;<br/>
+				<em>(Couleur de fond)</em></h4>
+				<p>
+				Spécifie la couleur de l’arrière-plan.<br/>
+				- transparent: La valeur initiale (ou « par défaut ») du fond d'un élément est transparent, ce qui permet à un élément de venir se superposer à un autre, tout en permettant de toujours voir le fond par transparence. 
+				La plupart du temps, ce ne sera pas utile de le déclarer, sauf si on souhaite annuler une couleur de fond qui aurait été préalablement définie pour cet élément.<br/>
+				- inherit: permet à l'élément d'hériter de la propriété background-color de son parent. On croit souvent par erreur que les couleurs de fond sont héritées par défaut, mais ce n'est pas le cas ; et lorsque l'on voit 
+				la couleur de fond du parent s'appliquer sur l'élément enfant, c'est parce que le fond de ce dernier est transparent.<br/>
+				(Valeurs: couleurs; transparent; inherit;)
+				</p>
+			<h4>background-image: url('images/fond.png');<br/>
+				<em>(image de fond)</em></h4>
+				<p>
+				Permet de définir une ou plusieurs images comme arrière-plan. Les images sont dessinées les unes au-dessus des autres. La première image indiquée est dessinée comme étant la plus proche de l'utilisateur. Attention, background-origin est ignorée lorsque background-attachment vaut fixed.
+				Les bordures de l'élément sont dessinés par-dessus l'arrière-plan et la couleur background-color est dessinée sous l'arrière-plan. La position et les limites de chaque image sont gérées grâce aux propriétés background-clip et background-origin.
+				</p>
+			<h4>background-origin: padding-box;<br/>
+				<em>(point d'origine de l'arrière-plan)</em></h4>
+				<p>
+				La propriété background-origin détermine l'origine de l'arrière-plan background-image à partir de la bordure, à l'intérieur de la bordure ou à l'intérieur de la zone de remplissage (padding).<br/>
+				- border-box: l'arrière-plan est positionné relativement à la boîte de bordure.<br/>
+				- padding-box: l'arrière-plan est positionné relativement à la boîte de remplissage (padding).<br/>
+				- content-box: l'arrière-plan est positionné relativement à la boîte de contenu.<br/> 
+				(Valeurs: border-box; padding-box; content-box;)
+				</p>
+			<h4>background-position: 50px 200px;<br/>
+				<em>(position du fond)</em></h4>
+				<p>
+				2 façons de faire :<br/>
+				en notant une distance en px ou %, par rapport au coin en haut à gauche<br/>
+				background-position: 50px 200px; (50 px à droite, 200px en bas)<br/>
+				en utilisant des valeurs prédéfinies, une pour la verticale et une pour l'horizontale :<br/>
+				- top (en haut, verticalement)<br/>
+				- center (au milieu, verticalement)<br/>
+				- bottom (en bas, verticalement)<br/>
+				- left (à gauche, horizontalement)<br/>
+				- center (au centre, horizontalement)<br/>
+				- right (à droite, horizontalement)<br/>
+				ex: background-position : bottom right; (en bas à droite)<br/> 
+				(Valeurs: top; bottom; left; right; center; en cm, em, px, %, ch)<br/>
+				</p>
+			<h4>background-position-x: right 32px;<br/>
+				<em>(position horizontale de l'image de fond)</em></h4>
+				<p>
+				La propriété background-position-x définit la position horizontale initiale de chaque image d'arrière-plan par rapport à l'origine, définie avec background-origin.<br/>
+				(Valeurs: left; right; center; en cm, em, px, %,)
+				</p>
+			<h4>background-position-y: bottom 32px;<br/>
+				<em>(position verticale de l'image de fond)</em></h4>
+				<p>
+				La propriété background-position-y définit la position verticale initiale de chaque image d'arrière-plan. La position est relative à l'origine définie par background-origin.<br/>
+				(Valeurs: top; bottom; center; en cm, em, px, %,)
+				</p>
+			<h4>background-repeat: repeat;<br/>
+				<em>(répétition du fond)</em></h4>
+				<p>
+				La propriété background-repeat définit la façon dont les images utilisées en arrière-plan sont répétées. Une image d'arrière-plan pourra ainsi être répétée sur l'axe horizontal, l'axe vertical ou bien ne pas être répétée.<br/>
+				(Valeurs: repeat; no-repeat; space; round;)
+				</p>
+			<h4>background-size: cover;<br/>
+				<em>(taille des images d'arrière-plan)</em></h4>
+				<p>
+				La propriété CSS background-size définit la taille des images d'arrière-plan pour l'élément. La taille de l'image peut être contrainte, complètement ou partiellement afin de conserver ses proportions.<br/>
+				L'espace qui n'est pas rempli par l'image d'arrière-plan aura la couleur définie par la propriété background-color. De plus, la couleur d'arrière-plan sera visible si l'image d'arrière-plan est transparente.<br/>
+				(Valeurs: contain; cover; auto;)
+				</p>
+				
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+	</section>
+	
+	
+	<section class='sectionorange'>
+		<h2 id='propriboites'>Propriétés des boîtes</h2>
+			<h3 id='dimensions'>Dimensions</h3>
+			<h4>width: 100%;<br/>
+				<em>(Largeur)</em></h4>
+				<p>
+				Valeur en px, %, em, ou encore "auto" (valeur par défaut, la largeur dépendra du texte à l'intérieur)
+				</p>
+			<h4>height: auto;<br/>
+				<em>(Hauteur)</em></h4>
+				<p>
+				Valeur en px, %, em, ou encore "auto" (valeur par défaut, la hauteur dépendra du texte à l'intérieur)
+				</p>
+			<h4>min-width: 20px;<br/>
+				<em>(Largeur minimale)</em></h4>
+				<p>
+				Valeur en px, %, em, ou encore "auto"
+				</p>
+			<h4>max-width: 20%;<br/>
+				<em>(Largeur maximale)</em></h4>
+				<p>
+				Valeur en px, %, em, ou encore "auto"
+				</p>
+			<h4>min-height: 10%;<br/>
+				<em>(Hauteur minimale)</em></h4>
+				<p>
+				Valeur en px, %, em, ou encore "auto"
+				</p>
+			<h4>max-height: 50px;<br/>
+				<em>(Hauteur maximale)</em></h4>
+				<p>
+				Valeur en px, %, em, ou encore "auto"
+				</p>
+				
+				
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+				
+				
+			<h3 id='bordures'>Bordures</h3>
+			<h4>border-width: 3px;<br/>
+				<em>(Epaisseur de la bordure)</em></h4>
+				<p>
+				Indiquer une valeur en px.
+				</p>
+			<h4>border-color: mediumpurple;<br/>
+				<em>(Couleur de la bordure)</em></h4>
+				<p>
+				Indiquer une valeur de couleur.
+				</p>
+			<h4>border-style: solid;<br/>
+				<em>(Type de bordure)</em></h4>
+				<p>
+				Les différents types de bordures sont:<br/>
+				<br/>
+				- none (pas de bordure par défaut)<br/>
+				- solid (un trait simple)<br/>
+				- dotted (bordure en pointillé)<br/>
+				- dashed (bordure en tiret)<br/>
+				- double (bordure double)<br/> 
+				- groove (bordure en relief)<br/>
+				- ridge (un autre effet de relief)<br/>
+				- inset (bordure avec un effet 3D global enfoncé)<br/>
+				- outset (bordure avec un effet 3D global surélevé)<br/>
+				<br/>
+				<a href='images/stylesbordures.png' target='_blank' rel='noopener'><img class='imabordure' src='images/stylesbordures.png' alt='Les différents styles de bordures' height='250' width='600' title='Cliquez pour agrandir'/></a>
+				</p>
+
+			<h4>border-left: 3px double black;<br/>
+				<em>(Bordure à gauche)</em></h4>
+				<p>
+				Indiquer la couleur, l'épaisseur et le type de bordure pour la bordure gauche.<br/>
+				border-left: 2px inset blue; (bordure bleue de 2px avec effet 3D "enfoncé").<br/>
+				Vous pouvez ne laisser apparaître qu'une seule bordure, si vous le souhaitez.
+				</p>
+			<h4>border-top: 3px double black;<br/>
+				<em>(Bordure en haut)</em></h4>
+				<p>
+				Idem
+				</p>
+			<h4>border-right: 3px double black;<br/>
+				<em>(Bordure à droite)</em></h4>
+				<p>
+				Idem
+				</p>
+			<h4>border-bottom: 3px double black;<br/>
+				<em>(Bordure en bas)</em></h4>
+				<p>
+				Idem
+				</p>
+			<h4>border: 3px dashed blue;<br/>
+				<em>(Méga-propriété de border)</em></h4>
+				<p>
+				Indiquer l'apparence des bordures en haut, à droite, en bas et à gauche.
+				</p>
+			<h4>outline: 2px solid blue;<br/>
+			<em>(Contours)</em></h4>
+			<p>
+			La propriété outline est une propriété raccourcie qui permet de définir, dans une seule déclaration, une ou plusieurs des propriétés parmi outline-style, outline-width et outline-color<br/>
+			Les contours (outline) diffèrent des bordures, notamment sur les points suivants :<br/>
+			- les contours ne prennent pas d'espace et sont dessinés au-dessus du contenu.<br/>
+			- les contours peuvent avoir une forme qui n'est pas rectangulaire. Ils seront rectangulaires avec Gecko et Firefox mais Opera dessinera une forme autour du contenu.
+			</p>
+			
+			
+			<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			
+			<h3 id='margesextint' >Marges extérieures et intérieures</h3>
+			<p class='pimage'>
+			Pour y voir un peu plus clair ^^<br/>
+			<br/>
+			<img class='imamargin' src='images/margpaddbord.png' alt='Images avec margin, border, padding.' title='margin, border et padding'/>
+			</p>
+			<h4>margin-top: 20px;<br/>
+				<em>(Marge en haut)</em></h4>
+				<p>
+				Indiquer une valeur comme 20px, 1.5em...
+				</p>
+			<h4>margin-left: 10px;<br/>
+				<em>(Marge à gauche)</em></h4>
+				<p>
+				Indiquer une valeur comme 20px, 1.5em...
+				</p>
+			<h4>margin-right: 10px;<br/>
+				<em>(Marge à droite)</em></h4>
+				<p>
+				Indiquer une valeur comme 20px, 1.5em...
+				</p>
+			<h4>margin-bottom: 20px;<br/>
+				<em>(Marge en bas)</em></h4>
+				<p>
+				Indiquer une valeur comme 20px, 1.5em...
+				</p>
+			<h4>margin: 10px 20px 10px 20px;<br/>
+				<em>(Méga-propriété de marge)</em></h4>
+				<p>
+				Indiquer de 1 à 4 valeurs à la suite:<br/>
+				- 1 valeur: "margin: 10px;" pour le haut, le bas, la gauche et la droite.<br/>
+				- 2 valeurs: "margin: 10px 20px;" la première haut/bas, la seconde gauche/droite.<br/>
+				- 3 valeurs: "margin: 10px 20px 10px;" la première haut, la seconde gauche/droite, la troisième bas.<br/>
+				- 4 valeurs: "margin: 10px 20px 10px 20px;" respectivement haut, droite, bas, gauche.
+				</p>
+			<h4>padding-top: 3em;<br/>
+				<em>(Marge intérieure en haut)</em></h4>
+				<p>
+				Indiquer une valeur comme 20px, 1.5em...
+				</p>
+			<h4>padding-left: 5%<br/>
+				<em>(Marge intérieure à gauche)</em></h4>
+				<p>
+				Idem
+				</p>
+			<h4>padding-right: 20px;<br/>
+				<em>(Marge intérieure à droite)</em></h4>
+				<p>
+				Idem
+				</p>
+			<h4>padding-bottom: 5px;<br/>
+				<em>(Marge intérieure en bas)</em></h4>
+				<p>
+				Idem
+				</p>
+			<h4>padding: 20px 5px 10px 5px;<br/>
+				<em>(Méga-propriété de marge intérieure)</em></h4>
+				<p>
+				Indiquer de 1 à 4 valeurs à la suite:<br/>
+				- 1 valeur: "padding: 10px;" pour le haut, le bas, la gauche et la droite.<br/>
+				- 2 valeurs: "padding: 10px 20px;" la première haut/bas, la seconde gauche/droite.<br/>
+				- 3 valeurs: "padding: 10px 20px 10px;" la première haut, la seconde gauche/droite, la troisième bas.<br/>
+				- 4 valeurs: "padding: 10px 20px 10px 20px;" respectivement haut, droite, bas, gauche.
+				</p>
+				
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+    </section>
+
+	
+	<section class='sectionvert'>
+			<h2 id="position">Propriétés d'affichage et de positionnement</h2>
+			<h3 id='affichage'>Affichage</h3>
+			<h4>display: block;<br/>
+				<em>(Type d'élément)</em></h4>
+				<p>
+				- none : l'élément ne sera pas affiché<br/>
+				- block : l'élément devient de type "block" (bloc, comme &lt;p&gt;)<br/>
+				- inline : l'élément devient de type "inline" (en ligne, comme &lt;strong&gt;)<br/>
+				- list-item : l'élément devient de type "élément de liste à puce" (comme &lt;li&gt;)<br/>
+				<br/>
+				La propriété display définit le type d'affichage utilisée pour le rendu d'un élément (de bloc ou en ligne) et la disposition utilisée pour ses éléments fils (grille ou boîtes flexibles).<br/>
+				Le type d'affichage donné par display possède deux composantes :<br/>
+				-le type d'affichage extérieur qui définit comment la boîte participe au flux<br/>
+				-le type d'affichage intérieur qui définit l'organisation des éléments enfants.<br/>
+				<br/>
+				Pour plus d'information visitez le site:  <a href='https://developer.mozilla.org/fr/docs/Web/CSS/display' target="_blank" rel="noopener">MDN Web Docs</a>
+				</p>
+			<h4>visibility: hidden;<br/>
+				<em>(Affichage)</em></h4>
+				<p>
+				La propriété visibility peut être utilisée afin de cacher un élément tout en conservant occupé l'espace dans lequel il aurait été visible. Elle permet aussi de masquer des lignes ou des colonnes dans un tableau.<br/>
+				display: none; fait complètement disparaître l'élément, tandis que visibility:hidden; masque l'élément, qui continue quand même à prendre de la place sur l'écran.<br/>
+				- hidden : masqué<br/>
+				- visible : visible (par défaut)<br/>
+				<br/>
+				- Exemple avec un paragraphe:<br/>
+				p<br/>
+				{<br/>
+				&emsp;visibility: hidden; /*les paragraphes ne seront pas visibles*/<br/>
+				}<br/>
+				<br/>
+				.pvisible<br/>
+				{<br/>
+				&emsp;visibility: visible; /*sauf ceux avec la class pvisible*/<br/>
+				}<br/>
+				<br/>
+				<br/>
+				- Exemple avec un tableau:<br/>
+				.col<br/>
+				{<br/>
+				&emsp;visibility: collapse; /*les lignes de tableau avec la class col seront repliées*/<br/>
+				}<br/>
+				<br/>
+				Pour les lignes, les colonnes, les groupes de lignes et les groupes de colonnes d'un tableau, les éléments sont masqués et l'espace occupé est retiré (comme si on avait appliqué display: none aux colonnes/lignes du tableau).<br/> 
+				La taille des autres lignes et colonnes continue d'être calculée comme si les lignes et colonnes masquées étaient présentes. Cela a été conçu afin de pouvoir retirer rapidement des lignes et/ou des colonnes sans avoir à recalculer les dimensions pour l'ensemble du tableau.
+				</p>
+			<h4>clip-path: circle(40%);<br/>
+				<em>(Afficher seulement une partie en rognant le reste)</em></h4>
+				<p>
+				La propriété clip-path remplace la propriété clip désormais dépréciée.<br/>
+				La propriété clip-path empêche une portion d'un élément d'être affichée en définissant une région qui sera rogner. Seule une zone spécifique de l'élément sera affichée.<br/>
+				<br/>
+				Par exemple avec une image:<br/>
+				- clip-path: circle(40%);<br/>
+				- clip-path: ellipse(130px 140px at 10% 20%);<br/>
+				- clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);<br/>
+				- clip-path: path('M 0 200 L 0,75 A 5,5 0,0,1 150,75 L 200 200 z');<br/>
+				<br/>
+				qui ont pour effet de gauche à droite:<br/>
+				<img src='images/exballonclippath.png' alt='Résultat des exemples clip-path.' title='Résultat clip-path'/>
+				</p>
+			<h4>overflow: visible;<br/>
+				<em>(Limiter les dimensions)</em></h4>
+				<p>
+				La propriété CSS overflow est une propriété raccourcie qui définit comment gérer le dépassement du contenu d'un élément dans son bloc. 
+				Elle définit les valeurs des propriétés overflow-x et overflow-y.<br/>
+				<br/>
+				- visible : tout l'élément sera affiché (par défaut)<br/>
+				- hidden : l'élément sera coupé s'il dépasse les limites définies par height et width, on ne pourra pas voir la partie du texte coupée<br/>
+				- scroll : tout comme hidden, l'élément sera coupé s'il dépasse les limites. Toutefois, cette fois le navigateur ajoutera des barres de défilement pour qu'on puisse voir la suite du texte<br/>
+				- auto : c'est le navigateur qui décide d'ajouter des barres de défilement ou pas, en fonction des cas Bien souvent, utiliser cette valeur revient à utiliser la valeur "scroll"<br/>
+				</p>
+				
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+			<h3 id='positionnement'>Positionnement</h3>
+			<h4>float: left;<br/>
+				<em>(Flottant)</em></h4>
+				<p>
+				La propriété float indique qu'un élément doit être retiré du flux normal et doit être placé sur le côté droit ou sur le côté gauche de son conteneur. 
+				Le texte et les autres éléments en ligne (inline) entoureront alors l'élément flottant. L'élément est retiré du flux normal de la page mais s'inscrit toujours dans le flux (contrairement au positionnement absolu).<br/>
+				- left : flottant à gauche<br/>
+				- right : flottant à droite<br/>
+				- none : pas de flottant (par défaut)<br/>
+				</p>
+			<h4>clear: right;<br/>
+				<em>(Stopper un flottant)</em></h4>
+				<p>
+				La propriété clear indique si un élément peut être situé à côté d'éléments flottants qui le précèdent ou s'il doit être déplacé vers le bas pour être en dessous de ces éléments. 
+				La propriété clear s'applique aux éléments flottants comme aux éléments non-flottants.<br/>
+				- left : supprime l'effet d'un flottant à gauche précédent<br/>
+				- right : supprime l'effet d'un flottant à droite précédent<br/>
+				- both : supprime l'effet d'un flottant précédent, qu'il soit à gauche ou à droite<br/>
+				- none : pas de suppression de l'effet du flottant (par défaut)<br/>
+				<br/>
+				Lorsqu'elle est appliquée aux blocs non-flottants, elle déplace le bord de la bordure de l'élément sous le bord de la marge de tous les éléments flottants concernés. 
+				Il y aura fusion des marges (margin collapsing) verticales entre l'élément flottant et le bloc non-flottant mais pas entre les élément flottants.<br/>
+				<br/>
+				Lorsqu'elle est appliquée aux éléments flottants, elle déplace le bord de la marge de l'élément sous le bord de la marge de tous les éléments flottants concernés. 
+				Cela impacte la position des éléments flottants suivants car ceux-ci ne peuvent pas être situés plus haut que les éléments flottants qui les précèdent.<br/>
+				<br/>
+				Les éléments flottants qui sont dégagés sont les éléments flottants précédant l'élément ciblé, au sein de du même contexte de formatage.<br/>
+				<br/>
+				Note : Si un élément ne contient que des éléments flottants, sa hauteur sera nulle. Si on souhaite redimensionner l'élément afin qu'il contienne tous les éléments flottants à l'intérieur, on peut faire flotter ce conteneur ou utiliser clear sur un pseudo-élément remplacé ::after.<br/>
+				<br/>
+				#conteneur::after {<br/>
+					&emsp;content: "";<br/>
+					&emsp;display: block;<br/>
+					&emsp;clear: both;<br/>
+				}
+				</p>
+			<h4>position: fixed;<br/>
+				<em>(Type de positionnement)</em></h4>
+				<p>
+				Un élément positionné est un élément dont la position calculée est relative, absolute, fixed ou sticky.<br/>
+				<br/>
+				- absolute:<br/>
+				Un élément positionné de façon absolue est un élément dont la position calculée est absolute ou fixed.<br/>
+				L'élément est retiré du flux normal et aucun espace n'est laissé pour l'élément sur la page.<br/>
+				Il est ensuite positionné par rapport à son bloc englobant (son ancêtre) positionné le plus proche s'il y en a un, ou sinon par rapport au bloc englobant initial.<br/> 
+				La position finale de l'élément est déterminée par les valeurs de top, right, bottom et left.<br/>
+				Cette valeur crée un nouveau contexte d'empilement lorsque z-index ne vaut pas auto. Les éléments positionnés de façon absolue peuvent avoir des marges, ces marges ne fusionnent pas avec les autres marges, si l'élément possède des marges, elles sont ajoutées aux décalages.<br/>
+				<br/>
+				- fixed:<br/> 
+				Position fixe (fonctionne comme la position absolue). L'élément reste à sa position même quand on descend plus bas dans la page<br/>
+				L'élément est retiré du flux normal et aucun espace n'est laissé pour l'élément sur la page.<br/> 
+				L'élément est positionné relativement au bloc englobant initial formé par la zone d'affichage (viewport), sauf si un des blocs englobants a une propriété transform, perspective ou filter qui est différente de none; dans ce cas, c'est celui-ci qui joue le rôle de bloc englobant.<br/>
+				Cela empêche le défilement lorsque la page est parcourue (ou lors de l'impression, le positionne à cette position fixe pour chaque page).<br/> 
+				Cette valeur crée toujours un nouveau contexte d'empilement. Certains incohérences existent entre les navigateurs quant au rôle de perspective et filter pour la définition du bloc englobant. La valeur finale de l'élément est déterminée par les valeurs de top, right, bottom et left.<br/>
+				Cette valeur crée toujours un nouveau contexte d'empilement. Pour les documents imprimés, cela se traduit par le placement de l'élément au même endroit pour chacune des pages.<br/>
+				<br/>
+				- relative:<br/>
+				Position relative, par rapport à la position "normale" de l'élément<br/>
+				L'élément est positionné dans le flux normal du document puis décalé, par rapport à lui-même, selon les valeurs fournies par top, right, bottom et left. Le décalage n'a pas d'impact sur la position des éléments.<br/>
+				L'espace fourni à l'élément sur la page est le même que celui fourni avec static.<br/>
+				Cette valeur crée un nouveau contexte d'empilement lorsque z-index ne vaut pas auto. L'effet de cette valeur n'est pas défini pour les éléments table-*-group, table-row, table-column, table-cell et table-caption.<br/>
+				<br/>
+				- sticky:<br/>
+				Un élément positionné en adhérence est un élément dont la position calculée vaut sticky. Le positionnement adhérent est un mélange de positionnement relatif et de positionnement fixe.<br/> 
+				Un tel élément se comporte comme un élément positionné de façon relative jusqu'à ce que son bloc englobant dépasse un seuil donné (par exemple fourni par la valeur de top) au sein du conteneur puis il se comporte ensuite comme un élément fixe jusqu'à atteindre le bord opposé du bloc englobant.<br/>
+				Dans tous les cas, y compris avec les éléments table, cela n'affecte pas la position des autres éléments.<br/>
+				Cette valeur entraîne toujours la création d'un nouveau contexte d'empilement.<br/> 
+				On notera qu'un tel élément « adhèrera » au bloc englobant le plus proche qui dispose d'un mécanisme de défilement (c'est-à-dire quand overflow vaut hidden, scroll, auto ou overlay) même s'il n'est pas le bloc englobant de défilement le plus proche : cette valeur ne fonctionnera pas dans un élément pour lequel la propriété vaut overflow: hidden ou auto.<br/>
+				<br/>
+				- static:<br/> 
+				Comportement normal (par défaut). L'élément est alors positionné dans le flux avec sa position. Les propriétés top, right, bottom, left et z-index ne s'appliquent pas.)
+				</p>
+			<h4>top<br/>
+				<em>(Position par rapport au haut)</em></h4>
+				<p>
+				Valeur en px, %, em... à utiliser pour un positionnement absolu, fixe ou relatif
+				</p>
+			<h4>bottom<br/>
+				<em>(Position par rapport au bas)</em></h4>
+				<p>
+				Idem
+				</p>
+			<h4>left<br/>
+				<em>(Position par rapport à gauche)</em></h4>
+				<p>
+				Idem
+				</p>
+			<h4>right<br/>
+				<em>(Position par rapport à droite)</em></h4>
+				<p>
+				Idem
+				</p>
+			<h4>z-index<br/>
+				<em>(Ordre d'affichage)</em></h4>
+				<p>
+				En cas de positionnement absolu par exemple, si 2 éléments se chevauchent, z-index permet d'indiquer quel élément doit être affiché au-dessus de l'autre.<br/>
+				Indiquez un nombre. Plus ce nombre est élevé, plus l'élément sera affiché en avant.<br/>
+				Par exemple, si 2 éléments sont positionnés en absolu avec un z-index de 10 pour l'un et de 20 pour l'autre, celui qui a un z-index de 20 est affiché par-dessus.<br/>
+				Pour les boîtes positionnées (celles pour lesquelles position est différent de static), la propriété z-index définit :<br/>
+				- Le niveau de la boîte dans la pile par rapport au contexte d'empilement courant<br/>
+				- Si la boîte crée un contexte d'empilement local.
+
+				</p>
+				
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+
+	</section>
+	
+	
+	<section class='sectionjaune'>
+			<h2 id="listes">Propriétés des listes</h2>
+			<h3 id='typeliste'>Type, position, image...</h3>
+			<h4>list-style-type<br/>
+				<em>(Type de liste)</em></h4>
+				<p>
+				Pour les listes non ordonnées (&lt;ul&gt;) :<br/>
+				<br/>
+				- disc : un disque noir (par défaut)<br/>
+				- circle : un cercle<br/>
+				- square : un carré<br/>
+				- none : aucune puce ne sera utilisée<br/>
+				<br/>
+				 Pour les listes ordonnées (&lt;ol&gt;) :<br/>
+				<br/>
+				- decimal : des nombres 1, 2, 3, 4, 5... (par défaut)<br/>
+				- decimal-leading-zero : des nombres commençant par zéro (01, 02, 03, 04, 05...)<br/>
+				Ne fonctionne pas sur Internet Explorer<br/>
+				- upper-roman : numérotation romaine, en majuscules (I, II, III, IV, V...)<br/>
+				- lower-roman : numérotation romaine, en minuscules (i, ii, iii, iv, v...)<br/>
+				- upper-alpha : numérotation alphabétique, en majuscules (A, B, C, D, E...)<br/>
+				- lower-alpha : numérotation alphabétique, en minuscules (a, b, c, d, e...)<br/>
+				- lower-greek : numérotation grecque<br/>
+				 Ne fonctionne pas sur Internet Explorer
+				</p>
+			<h4><br/>
+				<em></em></h4>
+				<p>
+				</p>
+			<h4><br/>
+				<em></em></h4>
+				<p>
+				</p>
+			<h4><br/>
+				<em></em></h4>
+				<p>
+				</p>
+				
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+	</section>
+	
+	
+	<section class='sectiongris'>
+			<h2 id="tableaux">Propriétés des tableaux</h2>
+			<h3 id='typebordure'>Type de bordure</h3>
+			<h3 id='cellules'>Cellules vides</h3>
+			<h3 id='positiontitre'>Position du titre</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+	</section>
+	
+	
+	<section class='sectionrouge'>
+				<h2 id="autres">Autres propriétés</h2>
+			<h4 id='curseur'>Curseur de souris</h4>
+			<h4 id='opacite'>opacity: 0.6;<br/>
+				<em>(Opacité)</em></h4>
+			<p>
+			Pour choisir l'opacité. Une valeur de 1 rendra l'élément totalement opaque, une valeur de 0 totalement transparent. Pour cet exemple de 0.6 l'élément sera opaque à 60% (attention il faut un point, pas une virgule).
+			</p>
+			<h4 id='commentaires'>/* Commentaires */</h4>
+			<p>
+			Comme en HTML, il est possible de mettre des commentaires. Les commentaires ne seront pas affichés, ils servent simplement à indiquer des informations pour vous, par exemple pour vous y retrouver dans un looong fichier CSS.
+			</P>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+		
+	</section>
+	
+				
+				<h3 id="h">H</h3>
+				
+			<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+				<h3 id="i">I</h3>
+				
+			<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+				<h3 id="j">J</h3>
+				
+			<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+				<h3 id="k">K</h3>
+				
+			<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+				<h3 id="l">L</h3>
+				
+			<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+				<h3 id="m">M</h3>
+				
+			<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+				<h3 id="n">N</h3>
+				
+			<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+				<h3 id="o">O</h3>
+				
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			<h3 id="p">P</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			<h3 id="q">Q</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			<h3 id="r">R</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			<h3 id="s">S</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			<h3 id="t">T</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			<h3 id="u">U</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			<h3 id="v">V</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			<h3 id="w">W</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			<h3 id="x">X</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			<h3 id="y">Y</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+			
+			<h3 id="z">Z</h3>
+			
+				<a class='retourmenu' href='#retourmenu'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+				
+
+	</body>
+	
+</html>

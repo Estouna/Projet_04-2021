@@ -1,0 +1,800 @@
+/*___________________________________________________________________________________________________________________/POLICES/___________________________________________________________________________________________________________________*/
+
+@font-face{font-family: 'Roboto-Light'; src: url('Polices/Roboto-Light.ttf');}
+@font-face{font-family: 'Roboto-LightItalic'; src: url('Polices/Roboto-LightItalic.ttf');}
+@font-face{font-family: 'Roboto-Regular'; src: url('Polices/Roboto-Regular.ttf');}
+@font-face{font-family: 'Roboto-Italic'; src: url('Polices/Roboto-Italic.ttf');}
+@font-face{font-family: 'Roboto-Medium'; src: url('Polices/Roboto-Medium.ttf');}
+@font-face{font-family: 'Roboto-Condensed'; src: url('Polices/Roboto-Condensed.ttf');}
+@font-face{font-family: 'Roboto-CondensedItalic'; src: url('Polices/Roboto-CondensedItalic.ttf');}
+@font-face{font-family: 'Roboto-BoldCondensed'; src: url('Polices/Roboto-BoldCondensed.ttf');}
+@font-face{font-family: 'Roboto-BoldCondensedItalic'; src: url('Roboto-BoldCondensedItalic.ttf');}
+@font-face{font-family: 'Roboto-Bold'; src: url('Polices/Roboto-Bold.ttf');}
+
+@font-face{font-family: 'ClementePDab-HairlineItalic'; src: url('ClementePDab-HairlineItalic.ttf');}
+
+/*___________________________________________________________________________________________________________________/FIN POLICES/___________________________________________________________________________________________________________________*/
+
+
+
+	
+
+
+body{
+	background-image: url("images/circuits3b.png");
+	background-attachment: scroll;
+	background-repeat: repeat;
+	width: 100%;
+	margin: 0;
+}
+
+
+
+
+
+/*___________________________________________________________________________________________________________________/TITRES/___________________________________________________________________________________________________________________*/
+
+#titre_principal{
+	display: inline-block;
+	color: white;
+	font-family: "Roboto-Light", Arial, "Time New Roman", sans-serif;
+	font-size: 0.8em;
+	width: 100%;
+	margin: 0;
+}
+.titrechev{
+	font-size: 1.3em;
+	color: white;
+}
+header{
+	background-image: -webkit-linear-gradient(to top, #bb9afe 0%, #8868cb 40%);
+	background-image: linear-gradient(to bottom, #bb9afe 0%, #8868cb 40%);
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 15px double white;
+	margin: 0% 0% 2% 0%;
+}
+h2{
+	display: inline-block;
+	color: white;
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	font-size: 1.7em;
+	text-align: center;
+	background-color: mediumpurple;
+	margin: 5% 0% 5%;
+	padding: 10px 0px 10px 0px;
+	border-top: 6px double white;
+	border-bottom: 6px double white;
+	width: 100%
+}
+h3{
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	font-size: 1.6em;
+	color: mediumpurple;
+	background-color: white;
+	margin: 100px 0px 60px 0px;
+	padding: 5px;
+	text-align: center;
+	border: 4px double mediumpurple;
+}
+h4{
+	position: relative;
+	top: 50px;
+	font-family: "Roboto-Bold", Arial, "Time New Roman", sans-serif;
+	color: mediumpurple;
+	font-size: 1.1em;
+	margin: 0px;
+	background-color: white;
+	padding: 10px 0px 55px 30px;
+	border-top: 3px double mediumpurple;
+	border-left: 3px double mediumpurple;
+	border-right: 3px double mediumpurple;
+	border-radius: 50px 0px 50px 0px;
+	box-shadow: 2px 0px 0px rebeccapurple;
+}
+
+/*___________________________________________________________________________________________________________________/FIN TITRES/___________________________________________________________________________________________________________________*/
+
+
+
+	
+
+
+/*___________________________________________________________________________________________________________________/img, p, a, a:hover, em etc/___________________________________________________________________________________________________________________*/
+
+p{
+	position: relative;
+	font-family: 'Roboto-Medium', "Trebuchet MS", Arial, sans-serif;
+	font-size: 0.8em;
+	margin: 5px 20px 5px 20px;
+	background-color: white;
+	padding: 30px 5px 30px 30px;
+	border: 3px double mediumpurple;
+	border-radius: 50px 0px 50px 0px;
+	line-height: 1.7em;
+	box-shadow: 2px 2px 0px rebeccapurple;
+}
+.pimage{
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	text-align: center;
+	border: 1px solid mediumpurple;
+	border-radius: 5px;
+	padding: 5px 0px 0px;
+}
+.pfondback{
+	border-top: 1px solid mediumpurple;
+}
+
+em{
+	font-family: 'Roboto-Regular', "Trebuchet MS", Arial, sans-serif;
+	color: mediumpurple;
+	font-size: 0.7em;
+	font-style: italic;
+}
+
+a{
+	color: mediumpurple;
+	text-decoration:none;
+}
+a:hover{
+	color: #662fd7;
+}
+
+.retourmenu{
+	display: block;
+	font-family: "Roboto-Regular", Arial "Time New Roman", sans-serif;
+	font-size: 0.7em;
+	text-align: center;
+	margin: 5em 10em 10em 10em;
+	color: mediumpurple;
+}
+img.bas{
+	width: 25px;
+	height: 25px;
+}
+
+/*___________________________________________________________________________________________________________________/FIN img, p, a, a:hover, em etc/___________________________________________________________________________________________________________________*/
+
+
+
+	
+
+
+/*___________________________________________________________________________________________________________________/SECTIONS/___________________________________________________________________________________________________________________*/
+
+section{
+	margin-right: 25%;
+	margin-left: 25%;
+}
+section h3{
+	margin-right: 30%;
+	margin-left: 30%;
+}
+section h4{
+	margin-right: 7%;
+	margin-left: 7%;
+}
+section p{
+	margin-right: 7%;
+	margin-left: 7%;
+}
+
+/*problème avec les liens quand z-index est en valeur négative*/
+.sectionviolet{position: relative; border: 4px double mediumpurple; background-color: rgba(147, 112, 219, 0.2);}
+.sectionbleu{position: relative; border: 4px double #3c43f7; background-color: rgba(60.4, 67, 247.4, 0.2);}
+.sectionorange{position: relative; border: 4px double #f8812e; background-color: rgba(248.5, 128.9, 45.8, 0.2);}
+.sectionvert{position: relative; border: 4px double #08b265; background-color: rgba(8.5, 177.9, 101.4, 0.2);}
+.sectionjaune{position: relative; border: 4px double #edb702; background-color: rgba(237.5, 183.2, 2.0, 0.2);}
+.sectiongris{position: relative; border: 4px double #7f7d7d; background-color: rgba(126.6, 125.2, 125.2, 0.2);}
+.sectionrouge{position: relative; border: 4px double #f60c0c; background-color: rgba(246, 12.4, 12.4, 0.2); padding:3% 0% 1%;}
+
+/*ESSAI TITRES DES DEFINITIONS EN COULEUR ACTIVER/DEACTIVER*/
+/*
+.sectionviolet h4{background-color: rgba(147, 112, 219, 0.3); color: white; border: 1px solid #9370db;}
+.sectionviolet em{color: white;}
+.sectionviolet p{border: 1px solid #9370db; border-top: none;}
+.sectionbleu h4{background-color: rgba(60.4, 67, 247.4, 0.3); color: white; border: 1px solid #3c43f7;}
+.sectionbleu em{color: white;}
+.sectionbleu p{border: 1px solid #3c43f7; border-top: none;}
+.sectionbleu .pfondback{border: 1px solid #3c43f7;}
+.sectionorange h4{background-color: rgba(248.5, 128.9, 45.8, 0.3); color: white; border: 1px solid #f9812e;}
+.sectionorange em{color: white;}
+.sectionorange p{border: 1px solid #f9812e; border-top: none;}
+.sectionorange .pimage{border: 1px solid #f9812e;}
+.sectionvert h4{background-color: rgba(8.5, 177.9, 101.4, 0.3); color: white; border: 1px solid #09b265;}
+.sectionvert em{color: white;}
+.sectionvert p{border: 1px solid #09b265; border-top: none;}
+.sectionjaune h4{background-color: rgba(237.5, 183.2, 2, 0.3); color: white; border: 1px solid #eeb702;}
+.sectionjaune em{color: white;}
+.sectionjaune p{border: 1px solid #eeb702; border-top: none;}
+.sectiongris h4{background-color: rgba(126.6, 125.2, 125.2, 0.3); color: white; border: 1px solid #7f7d7d;}
+.sectiongris em{color: white;}
+.sectiongris p{border: 1px solid #7f7d7d; border-top: none;}
+.sectionrouge h4{background-color: rgba(246, 12.4, 12.4, 0.3); color: white; border: 1px solid #f60c0c;}
+.sectionrouge em{color: white;}
+.sectionrouge p{border: 1px solid #f60c0c; border-top: none;}
+*/
+
+/*___________________________________________________________________________________________________________________/SECTIONS/___________________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+	
+
+/*___________________________________________________________________________________________________________________/LES MENUS/___________________________________________________________________________________________________________________*/
+
+
+
+	/*___________________________________________________________________________________________________________________/MENU TITRE/___________________________________________________________________________________________________________________*/
+
+.nav1{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+}
+.nav1 ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+.nav1 li{
+	display: inline-block;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	margin: 0px 0px 0px -4px;
+	padding: 0px;
+	border-left:1px solid black;
+}
+.nav1 a{
+	font-size: 0.9em;
+	font-weight: bold;
+	color: white;
+	font-family: "Roboto-Condensed", Arial, "Comic Sans MS", sans-serif;
+	text-decoration: none;
+}
+.nav1 ul li a{
+	float:left; 
+	background-image: -webkit-linear-gradient(to top, #e3d6ff 0%, #8868cb 60%);
+	background-image: linear-gradient(to bottom, #e3d6ff 0%, #8868cb 60%);
+	width: 150px;
+	line-height:25px; /*hauteur de l'image de fond*/
+}
+.nav1 ul li a:hover{
+	background:mediumpurple url(images/menuviolet2d.png) repeat-x;
+	color:white;
+}
+
+	/*___________________________________________________________________________________________________________________/FIN MENU TITRE/___________________________________________________________________________________________________________________*/
+
+
+
+	
+
+
+	/*___________________________________________________________________________________________________________________/MENU SOMMAIRE/___________________________________________________________________________________________________________________*/
+
+nav{
+	display: inline-block;
+	width: 100%;
+	margin: 0;
+	text-align: center;
+}
+.navul1, .navul2, .navul3, .navul4, .navul5, .navul6, .navul7{
+	padding: 10px 0px 0px 0px;
+	margin: 0% 32% 0%;
+	height: 150px;
+	list-style-type: none;
+}
+.navul1{border: 3px double mediumpurple; border-bottom: none; background-color: rgba(147, 112, 219, 0.5); border-radius: 30px 30px 0px 0px;}
+.navul2{border: 3px double #3c43f7; border-top: none; border-bottom: none; background-color: rgba(60.4, 67, 247.4, 0.5);}
+.navul3{border: 3px double #f8812e; border-top: none; border-bottom: none; background-color: rgba(248.5, 128.9, 45.8, 0.5);}
+.navul4{border: 3px double #08b265; border-top: none; border-bottom: none; background-color: rgba(8.5, 177.9, 101.4, 0.5);}
+.navul5{border: 3px double #edb702; border-top: none; border-bottom: none; background-color: rgba(237.5, 183.2, 2.0, 0.5);}
+.navul6{border: 3px double #7f7d7d; border-top: none; border-bottom: none; background-color: rgba(126.6, 125.2, 125.2, 0.5);}
+.navul7{border: 3px double #f60c0c; border-top: none; background-color: rgba(246, 12.4, 12.4, 0.5); margin-bottom: 5%; border-radius: 0px 0px 30px 30px;}
+
+nav em{color: white;}
+
+nav a{
+	font-size: 1.4em;
+	color: white;
+	font-family: "Roboto-Bold", Arial, "Comic Sans MS", sans-serif;
+	text-decoration: none;
+}
+nav a:hover{color: #bb9afe;}
+nav a:hover em {color: #bb9afe;}
+
+	/*___________________________________________________________________________________________________________________/FIN MENU SOMMAIRE/___________________________________________________________________________________________________________________*/
+
+
+
+	
+
+
+	/*___________________________________________________________________________________________________________________/MENU SOMMAIRE POSITION:FIXED/___________________________________________________________________________________________________________________*/
+
+.menu-der, .menu-der2
+{
+	-moz-user-select: none; /* Firefox */
+	-webkit-user-select: none; /* Chrome, Safari, Opéra depuis la version 15 */
+	-ms-user-select: none; /* Internet explorer depuis la version 10 et Edge */
+	user-select: none; /* Propriété standard */
+}
+
+.menu-der ul, .menu-der2 ul
+{
+	padding:0px;
+	margin: 0px;
+	list-style:none;
+	text-align: center;
+}
+
+/*Aligne horizontalement le menu. Possibilité de règler la largeur des titres des menus(width:). Penser à mettre width: 100%; à ul li pour adapter les sous menus. position:relative; règle les sous menus */
+.menu-der li, .menu-der2 li
+{
+	display:inline-block;
+	position:relative;
+	border-radius:12px 12px 0 0;
+	width: 21%;
+	padding: 0px 0px 0px 0px;
+	border: 1px solid white;
+}
+/*Aligne verticalement les sous menus (display: inherit; enlève l'alignement horizontal des sous menus). width: 100%; pour adapter les sous menus à la taille des menus titres*/
+.menu-der ul li, .menu-der2 ul li{display:inherit; border-radius:0px; width:100%;}
+
+/*Bordure sousmenus*/
+.menu-der li li, .menu-der2 li li{border: none;}
+/*Border-radius sous menus */
+.menu-der ul li:last-child, .menu-der2 ul li:last-child{border-radius:0 0 8px 8px;}
+
+
+.menu-der ul li:hover, .menu-der2 ul li:hover{border-radius:0;}
+
+
+/*position: absolute; fixe le menu. -moz-transition: -webkit-transition: transition: = temps déroulement menus aller/retour*/
+.menu-der ul, .menu-der2 ul
+{
+	position:absolute;
+	z-index: 1000;
+	max-height:0;
+	left: 0;
+	right: 0;
+	overflow:hidden;
+	-moz-transition: .5s all .1s;
+	-webkit-transition: .5s all .1s;
+	transition: .5s all .1s;
+}
+
+/* Règle la hauteur des sous menus*/
+.menu-der li:hover ul, .menu-der2 li:hover ul{max-height:15em;}
+
+
+/* background des liens menus */
+/*Violet*/
+.menu-der li:first-child{background-color: #bb9afe; background-image:-webkit-linear-gradient(top, #cab3f8 0%, #7458ad 100%); background-image:linear-gradient(to bottom, #cab3f8 0%, #7458ad 100%);}
+/*Bleu*/
+.menu-der li:nth-child(2){background-color: #8181fd; background-image: -webkit-linear-gradient(top, #afaffa 0%, #0606c1 100%); background-image:linear-gradient(to bottom, #afaffa 0%, #0606c1 100%);}
+/*Orange*/
+.menu-der li:nth-child(3){ background-color: #fdb97e; background-image:-webkit-linear-gradient(top, #fcbf89 0%, #fd8115 100%); background-image:linear-gradient(to bottom, #fcbf89 0%, #fd8115 100%);}
+/*Vert*/
+.menu-der li:last-child{background-color: #2f9f2f; background-image:-webkit-linear-gradient(top, #a0c8a0 0%, #188b18 100%); background-image:linear-gradient(to bottom, #a0c8a0 0%, #188b18 100%);}
+/*Jaune*/
+.menu-der2 li:first-child{background-color: #ffc115; background-image:-webkit-linear-gradient(top, #ffde83 0%, #ffbb00 100%); background-image:linear-gradient(to bottom, #ffde83 0%, #ffbb00 100%);}
+/*Gris*/
+.menu-der2 li:nth-child(2){background-color: #8181fd; background-image: -webkit-linear-gradient(top, #c1c1c1 0%, #767676 100%); background-image:linear-gradient(to bottom, #c1c1c1 0%, #767676 100%);}
+/*Rouge*/
+.menu-der2 li:last-child{background-color: red; background-image:-webkit-linear-gradient(top, #fdb7b7 0%, red 100%); background-image:linear-gradient(to bottom, #fdb7b7 0%, red 100%);}
+
+
+/* background des liens sous menus */
+/*violet*/
+.menu-der li:first-child li{background:#6a509f;}
+/*bleu*/
+.menu-der li:nth-child(2) li{background:#01019c;}
+/*orange*/
+.menu-der li:nth-child(3) li{background:#f27101;}
+/*vert*/
+.menu-der li:last-child li{background:#138713;}
+/*Jaune*/
+.menu-der2 li:first-child li{background:#f6b500;}
+/*Gris*/
+.menu-der2 li:nth-child(2) li{background:#6e6e6e;}
+/*Rouge*/
+.menu-der2 li:last-child li{background:#ee0000;}
+
+
+/* background des liens menus et sous menus au survol */
+/*violet*/
+.menu-der li:first-child li:hover{background:#b28cfe;}
+/*bleu*/
+.menu-der li:nth-child(2) li:hover{background:#6e6efc;}
+/*orange*/
+.menu-der li:nth-child(3) li:hover{background:#fdb97e;}
+/*vert*/
+.menu-der li:last-child li:hover{background:#73ba73;}
+/*Jaune*/
+.menu-der2 li:first-child li:hover{background:#ffdb79;}
+/*Gris*/
+.menu-der2 li:nth-child(2) li:hover{background:#cbcbcb;}
+/*Rouge*/
+.menu-der2 li:last-child li:hover{background:#ff9999;}
+
+/* background des titres au survol */
+/*Violet*/
+.menu-der li:first-child:hover{background:mediumpurple;}
+/*bleu*/
+.menu-der li:nth-child(2):hover{background:#2626fd;}
+/*orange*/
+.menu-der li:nth-child(3):hover{background:#fd9133;}
+/*vert*/
+.menu-der li:last-child:hover{background:#2f9f2f;}
+/*Jaune*/
+.menu-der2 li:first-child:hover{background:#ffcb3b;}
+/*Gris*/
+.menu-der2 li:nth-child(2):hover{background:#929292;}
+/*Rouge*/
+.menu-der2 li:last-child:hover{background:#ff3f3f;}
+
+
+/* Règle les a href */
+.menu-der a, .menu-der2 a
+{
+	text-decoration:none;
+	display:block;
+	padding:15px 0px;
+	color:#fff;
+	font-family: "Roboto-Condensed", Arial, "Time New Roman", sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+}
+/*Règle les sous menus et permet de modifier la hauteur de leurs cellules en jouant sur la taille de la police*/
+.menu-der li li a, .menu-der2 li li a
+{
+	font-family: "Roboto-Condensed", Arial, "Time New Roman", sans-serif;
+	font-size: 0.9em;
+	font-weight: normal;
+}
+/* Règler la hauteur des menus titres. Règler la largeur dans .menu-der li.*/
+.menu-der ul a, .menu-der2 ul a
+{
+	padding:8px 0;
+}
+/*Couleur texte sous menus quand on survol le titre*/
+.menu-der li:hover li a, .menu-der2 li:hover li a
+{
+	color:#fff;
+	text-transform:inherit;
+}
+/*Couleur texte titre au survol*/
+.menu-der li:hover a, .menu-derli li:hover a, .menu-der2 li:hover a, .menu-der2 li li:hover a
+{
+	color:#fff;
+}
+
+/*Centre le menu, règle sa taille et permet de le positionner avec les marges*/
+.menu-der
+{
+	margin: 5% 0% 0% -4%;
+	text-align:center;
+	width: 100%;
+}
+.menu-der2
+{
+	margin: 16% 0% 16% -4%;
+	text-align:center;
+}
+
+/*Menu fixe (menu sur le coté de l'écran qui se cache et sort quand activé*/
+.menu
+{
+	position: fixed;
+	z-index: 100;
+	right: -38em;								/*Cache le menu (plus la valeur négative est élévée plus le menu est caché sur la droite)*/
+	top: 30%;									/*Position du menu par rapport au haut de la fenêtre*/
+	width: 40em;
+	background: rgba(147, 112, 219, 0.3);		/*Couleur rgb/255 du mediumpuple et opacité en dernier */
+	border: 8px double mediumpurple;
+	border-radius: 40px 0px 0px 40px;
+	margin: 0em 0em 0em 0em;					/*margin: 0em 0em(règle la distance à laquelle le menu sort quand il est activé) 0em 0em;*/
+	padding: 0em 0em 0em 0em;					/*padding: 0em 0em 0em 0em;*/
+	margin-top: 0px;
+	transition: 1s
+}      
+.menu:hover { right: -20px }					/*Règle aussi la distance à laquelle le menu sort quand il est activé*/
+
+	/*___________________________________________________________________________________________________________________/FIN MENU SOMMAIRE POSITION:FIXED/___________________________________________________________________________________________________________________*/
+
+	
+	
+/*___________________________________________________________________________________________________________________/FIN LES MENUS/___________________________________________________________________________________________________________________*/
+
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*___________________________________________________________________________________________________________________/MEDIA QUERIES/___________________________________________________________________________________________________________________*/
+
+
+
+	/*___________________________________________________________________________________________________________________/500px/___________________________________________________________________________________________________________________*/
+
+@media all and (max-device-width: 396px)
+{
+	/*TITRE*/
+    #titre_principal{font-size: 0.7em;}
+    h2{font-size: 1.4em; margin: 15% 0% 10%;}
+	  h3{font-size: 1.2em; margin-top: 20px;}
+	
+    /*SECTIONS*/
+    .sectionviolet{margin: 0% 0% 0%;}
+    .sectionbleu{margin: 0% 0% 0%;}
+    .sectionorange{margin: 0% 0% 0%;}
+    .sectionvert{margin: 0% 0% 0%;}
+    .sectionjaune{margin: 0% 0% 0%;}
+    .sectiongris{margin: 0% 0% 0%;}
+    .sectionrouge{margin: 0% 0% 0%;}
+	
+	section{margin-right: 0%; margin-left: 0%;}
+	section h2{margin-right: 0%; margin-left: 0%;margin-top: 20%;}
+	section h3{margin-right: 15%; margin-left: 15%;}
+	section h4{margin-right: 4%; margin-left: 4%;}
+	section p{margin-right: 4%; margin-left: 4%;}
+  
+	section em{
+		font-size: 0.8em;
+	}
+	h4{
+		font-size: 1em;
+	}
+	p{
+		letter-spacing: -0.5%;
+		word-spacing: -0.5%;
+		line-height: 1.5em;
+		font-size: 0.8em;
+	}
+	img.imabordure
+	{
+		width: 270px;
+		height: auto;
+	}
+	
+	img.imamargin
+	{
+	  width: 280px;
+	  height: auto;
+	}
+	
+	
+	
+	/*MENU DEROULANT*/
+	
+	/*Centre le menu et règle sa taille*/
+	.menu-der{
+		margin: -3% 0% 23% -9.5%;
+		text-align:center;
+		width: 100%;
+	}
+	.menu-der2{
+		margin: 10% 0% 22% -9.5%; /*Les marges ici peuvent servir à règler la hauteur du menu caché*/
+		text-align:center;
+	}
+    /*Menu fixe (menu sur le coté de l'écran qui se cache et sort quand activé*/   
+    .menu{
+		position: fixed;
+		right: -24.5em;	/*Cache le menu (plus la valeur négative est élévée plus le menu est caché sur la droite)*/
+		top: 35%;	/*Position du menu par rapport au haut de la fenêtre*/
+		width: 24.5em;
+		border: 6px double mediumpurple;
+		border-radius: 40px 0px 0px 40px;
+		margin: 0em 0.5em 0em 0em;	/*margin: 0em 0em(règle la distance à laquelle le menu sort quand il est activé) 0em 0em;*/
+		padding: 2em 0em 0em 0em;	/*padding: 0em 0em 0em 0em;*/
+		margin-top: 0px;
+		transition: 0.3s
+	} 
+	/*Règle aussi la distance à laquelle le menu sort quand il est activé*/
+	.menu:hover { right: -20px }
+	
+	/*Règle les sous menus et permet de modifier la hauteur de leurs cellules en jouant sur la taille de la police*/
+	.menu-der li li a, .menu-der2 li li a{
+		font-family: "Roboto-Condensed", Arial, "Time New Roman", sans-serif;
+		font-size: 0.7em;
+		font-weight: normal;
+	}
+    .menu-der a, .menu-der2 a{
+		font-size: 0.7em;
+		font-weight: bold;
+		padding: 10px 0px;
+    }
+    .menu-der li, .menu-der2 li{
+		width: 21.5%;
+		padding: 0px 0px 0px 0px;
+    }
+    
+  
+    
+	/*MENU TITRE*/
+	.nav1 ul li a{
+		font-size: 0.7em;
+		width: 75px;
+		line-height:15px; /*hauteur de l'image de fond*/
+	}
+	
+	/*SOMMAIRE*/
+	nav a{font-size: 0.9em;}
+	em{font-size: 0.9em;}
+	
+	
+	.navul1, .navul2, .navul3, .navul4, .navul5, .navul6, .navul7{
+		padding: 5px 0px 0px 0px;
+		margin: 0% 13% 0%;
+		height: 90px;
+	}
+	
+	.navul7{margin-bottom: 10%;}
+}
+
+	/*___________________________________________________________________________________________________________________/FIN 500px/___________________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+	/*___________________________________________________________________________________________________________________/900px/___________________________________________________________________________________________________________________*/
+
+@media (orientation: landscape) and (max-device-width : 880px) 
+{
+	/*TITRE*/
+	#titre_principal{font-size: 1em;}
+	h2{font-size: 1.5em; margin: 10% 0% 10%;}
+	h3{font-size: 1.4em; margin-top: 50px;}
+	h4{font-size: 1.3em;}
+	
+	p{
+		font-size: 1em;
+		letter-spacing: -0.5%;
+		word-spacing: -0.5%;
+		line-height: 1.5em;
+	}
+	
+	/*SECTION*/
+	.sectionviolet{margin: 0% 0% 0%;}
+    .sectionbleu{margin: 0% 0% 0%;}
+    .sectionorange{margin: 0% 0% 0%;}
+    .sectionvert{margin: 0% 0% 0%;}
+    .sectionjaune{margin: 0% 0% 0%;}
+    .sectiongris{margin: 0% 0% 0%;}
+    .sectionrouge{margin: 0% 0% 0%;}
+	
+	section{margin-right: 1%; margin-left: 1%;}
+	section h2{margin-right: 0%; margin-left: 0%;}
+	section h3{margin-right: 7%; margin-left: 7%;}
+	section h4{margin-right: 7%; margin-left: 7%;}
+	section p{margin-right: 7%; margin-left: 7%;}
+	
+	
+	
+	
+	
+	/*MENU DEROULANT*/
+	
+	/*Centre le menu et règle sa taille*/
+	.menu-der{
+		margin: -2% 0% 18% -7%;
+		text-align:center;
+		width: 100%;
+	}
+	.menu-der2{
+		margin: 10% 0% 18% -7%;
+		text-align:center;
+	}
+    /*Pour fixer un menu (menu sur le coté de l'écran qui se cache et sort quand activé*/   
+    .menu{
+		position: fixed;
+		right: -29.5em;	/*Cache le menu (plus la valeur négative est élévée plus le menu est caché sur la droite)*/
+		top: 4%;	/*Position du menu par rapport au haut de la fenêtre*/
+		width: 30em;
+		border: 6px double mediumpurple;
+		border-radius: 40px 0px 0px 40px;
+		margin: 0em 0.5em 0em 0em;	/*margin: 0em 0em(règle la distance à laquelle le menu sort quand il est activé) 0em 0em;*/
+		padding: 2em 0em 0em 0em;	/*padding: 0em 0em 0em 0em;*/
+		margin-top: 0px;
+		transition: 0.3s
+	}      
+	.menu:hover { right: -20px }	/*Règle aussi la distance à laquelle le menu sort quand il est activé*/
+	
+	/*Règle les sous menus et permet de modifier la hauteur de leurs cellules en jouant sur la taille de la police*/
+	.menu-der li li a, .menu-der2 li li a{
+		font-family: "Roboto-Condensed", Arial, "Time New Roman", sans-serif;
+		font-size: 0.9em;
+		font-weight: normal;
+	}
+	.menu-der a, .menu-der2 a{
+		font-size: 0.9em;
+		font-weight: bold;
+		padding: 10px 0px;
+    }
+    .menu-der li, .menu-der2 li{
+		width: 22%;
+		padding: 0px 0px 0px 0px;
+    }
+    
+    
+	/*SOMMAIRE*/
+	.navul1, .navul2, .navul3, .navul4, .navul5, .navul6, .navul7{
+		padding: 10px 0px 0px 0px;
+		margin: 0% 15% 0%;
+		height: 110px;
+	  }
+	  nav a{font-size: 1.4em;}
+	  em{font-size: 0.7em;}
+	.navul7{margin-bottom: 10%;}
+	
+	/*MENU TITRE*/
+	.nav1 ul li a{
+		font-size: 0.9em;
+		width: 100px;
+		line-height:30px; /*hauteur de l'image de fond*/
+	}
+}
+
+	/*___________________________________________________________________________________________________________________/FIN 900px/___________________________________________________________________________________________________________________*/
+
+
+
+/*___________________________________________________________________________________________________________________/FIN MEDIA QUERIES/___________________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

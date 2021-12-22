@@ -1,0 +1,288 @@
+/*POLICES*/
+@font-face{font-family: 'Roboto-Light'; src: url('Polices/Roboto-Light.ttf');}
+@font-face{font-family: 'Roboto-LightItalic'; src: url('Polices/Roboto-LightItalic.ttf');}
+@font-face{font-family: 'Roboto-Regular'; src: url('Polices/Roboto-Regular.ttf');}
+@font-face{font-family: 'Roboto-Italic'; src: url('Polices/Roboto-Italic.ttf');}
+@font-face{font-family: 'Roboto-Condensed'; src: url('Polices/Roboto-Condensed.ttf');}
+@font-face{font-family: 'Roboto-CondensedItalic'; src: url('Polices/Roboto-CondensedItalic.ttf');}
+@font-face{font-family: 'Roboto-Bold'; src: url('Polices/Roboto-Bold.ttf');}
+
+body
+{
+	background-image: url("images/circuits3b.png");
+	background-attachment: scroll;
+	background-repeat: repeat;
+	margin: 0;
+	width: 100%;
+}
+
+/*TITRES*/
+
+#titre_principal{
+
+display: inline-block;
+color: white;
+font-family: "Roboto-Light", Arial, "Time New Roman", sans-serif;
+font-size: 0.8em;
+width: 100%;
+margin: 0;
+}
+.chev{
+font-size: 1.3em;
+color: white;
+}
+header{
+background-image: -webkit-linear-gradient(to top, #bb9afe 0%, #8868cb 40%);
+background-image: linear-gradient(to bottom, #bb9afe 0%, #8868cb 40%);
+text-align: center;
+padding-top: 10px;
+padding-bottom: 10px;
+border-bottom: 15px double white;
+margin: 0% 0% 0% 0%;
+}
+
+h2
+{
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	color: white;
+	text-align: center;
+	background-color: mediumpurple;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	border-top: 4px double white;
+	border-bottom: 4px double white;
+	font-size: 1.6em;
+	width:100%;
+}
+
+h4
+{
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid mediumpurple;
+	box-shadow: 3px 3px 0px rebeccapurple;
+	color: mediumpurple;
+	text-align: center;
+	font-size: 1.1em;
+	width: 190px;
+	padding: 15px 0px 15px 0px;
+	margin: 5em 0em 2em 0em;
+	
+}
+
+
+
+/*Règler les marges de .centerTable par rapport au width de table pour arriver à 100% (ex: width:30%; margin: 0% 35% 0% 35%; 30+35+35=100%*/
+.centerTable 
+{
+	margin: 0% 30% 0% 30%;
+	empty-cells: hide;
+}
+
+table 
+{
+	table-layout: fixed;
+	border-collapse: separate;
+	width: 40%;
+	border-spacing: 8px 8px;
+	border: 4px double mediumpurple;
+	border-radius: 40px;
+	background: rgba(147, 112, 219, 0.1);
+	padding: 40px;
+}
+
+tr, td
+{
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+}
+
+td
+{
+	text-align: center;
+	background-color: white;
+	font-size: 0.9em;
+	font-weight: bold;
+	border: 1px solid mediumpurple;
+	box-shadow: 3px 3px 0px rebeccapurple;
+	height: 40px;
+	border-radius: 5px;
+}
+
+th
+{
+	background-color: #fdb97e;
+	border: 4px double white;
+	font-size: 1.4em;
+	color: white;
+	height: 45px;
+	border-radius: 5px;
+}
+
+a
+{
+	color: mediumpurple;
+	text-decoration:none;
+}
+
+a:hover
+{
+	color: #fdb97e;
+}
+
+section
+{
+	font-size: 0.8em;
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	margin: 0% 25% 0% 25%;
+}
+
+section P
+{
+	Background: white;
+	padding: 30px 5px 30px 30px;
+	border: 1px solid mediumpurple;
+	border-radius: 10px;
+	line-height: 1.7em;
+}
+
+img.photos
+{
+  margin-left: 0px;
+  border: 1px solid mediumpurple;
+  box-shadow: 3px 3px 0px rebeccapurple;
+}
+
+.retourmenu
+{
+	display: block;
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	font-size: 0.7em;
+	text-align: center;
+	margin: 20em 10em 20em 10em;
+	color: mediumpurple;
+}
+
+img.bas
+{
+	width: 25px;
+	height: 25px;
+}
+
+/* Navigation */
+
+nav
+{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+}
+
+nav ul
+{
+	font-size: 0.9em;
+	font-family: "Roboto-Condensed", Arial, "Comic Sans MS", sans-serif;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+nav li
+{
+	display: inline-block;
+	border-top: 1px solid #7458ad;
+	border-bottom: 1px solid #7458ad;
+	margin: 0px 0px 0px -4px;
+	padding: 0px;
+	border-left:1px solid black;
+}
+nav a
+{
+	font-weight: bold;
+	color: white;
+	text-decoration: none;
+}
+
+nav ul li a
+{
+	float:left; 
+	background-image: -webkit-linear-gradient(to top, #e3d6ff 0%, #8868cb 60%);
+	background-image: linear-gradient(to bottom, #e3d6ff 0%, #8868cb 60%);
+	width: 150px;
+	line-height:25px; /*hauteur de l'image de fond*/
+}
+
+nav ul li a:hover 
+{
+	background:mediumpurple url(images/menuviolet2d.png) repeat-x;
+	color:white;
+}
+
+@media all and (max-device-width: 500px)
+{
+    #titre_principal{font-size: 0.7em;}
+    h4{font-size: 1.2em;}
+    
+    section{
+      margin: 0% 3% 0% 3%;
+    }
+    
+    section p
+    {
+      font-size: 1.1em;
+      padding: 30px 5px 30px 20px;
+    }
+      
+    table
+    {
+      width: 100%;
+      background: rgba(147, 112, 219, 0.4);
+    }
+    
+    .centerTable 
+    {
+  	  margin: 0% 0% 20% 0%;
+  	  padding: 10% 0% 10%;
+  	  border: none;
+  	  border-bottom: 4px double mediumpurple;
+  	  border-radius: 0px;
+    }
+	
+	  td
+    {
+      font-size: 0.75em;
+      height: 25px;
+    }
+    
+    th
+    {
+        font-size: 1em;
+        height: 30px;
+    }
+    
+    nav ul li a
+	  {
+		font-size: 0.7em;
+		width: 75px;
+		line-height: 15px; /*hauteur de l'image de fond*/
+	  }
+}
+
+@media (orientation: landscape) and (max-device-width : 900px) 
+{
+	table
+    {
+		width: 80%;
+    }
+	
+	td
+    {
+		font-size: 1em;
+    }
+    
+    nav ul li a
+	{
+		width: 150px;
+		line-height: 30px; /*hauteur de l'image de fond*/
+	}
+}

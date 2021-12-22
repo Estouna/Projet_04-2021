@@ -1,0 +1,68 @@
+/* 	
+COULEURS:
+
+Violet: 	#47346c; #6a509f; #7458ad; #7c5fb8; #8364c3; #8868cb; #8d6bd2; 	 	[+foncé mediumpurple; +clair] 	   #9a75e5; #a079ee; #ab83ff; #b28cfe; #bb9afe; #c6abfe; #cab3f8; #decffe; #e3d6ff
+orange:     #f27101; #fd8115; #fd9133; #fd9133; #fd9942; #fda253; #fdac64;      [+foncé	#fdb97e;	  +clair]	   #fcbf89; #fdc696; #fdcca2; #fdd2ad; #fdd7b7; #fcdcbf;
+vert:		#007500; #097c09; #108310; #138713;	#188b18; #1e8c1e; #229022;		[+foncé	#289628;	  +clair]	   #2f9f2f; #37a037; #43a543; #4fab4f; #61b361; #73ba73; #85bf85; #a0c8a0;
+bleu:		#01019c; #0606c1; #0e0ecb; #1313d1; #1717da; #1b1be6; #2020f0; 		[+foncé	#2626fd;	  +clair]	   #3232fe; #3e3efc; #4a4afd; #5555fb; #6060fb; #6e6efc; #8181fd; #afaffa;
+jaune:		#f6b500; #ffbb00; #ffc115; #ffc72d; #ffc932; #ffcb3b; #ffce46;		[+foncé	#ffd150;	  +clair]	   #ffd359; #ffd664; #ffd86d; #ffdb79; #ffde83; #ffe18f; #ffe49b; #ffe9ac;			
+
+
+
+
+
+
+
+
+margin: haut droite bas gauche
+
+
+
+	
+img, table, td, blockquote, code, pre, textarea, input, iframe, object, embed, video 
+{
+    max-width: 100%;
+}
+
+
+
+
+@font-face 
+{
+	font-family: 'AlexBrush-Regular';
+	src: url('AlexBrush-Regular.ttf');
+}
+
+
+
+
+@media all and (max-device-width: 480px)
+{
+    table
+    {
+      width: 100%;
+    }
+	
+	.container 
+	{
+		font-size: 0.6em;
+	}
+}
+
+@media (orientation: landscape) and (max-device-width : 858px) 
+{
+	table
+    {
+      width: 100%;
+    }
+	
+	.container 
+	{
+		font-size: 0.5em;
+	}
+}
+
+
+
+
+*/

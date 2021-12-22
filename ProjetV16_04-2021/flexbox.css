@@ -1,0 +1,171 @@
+/*___________________________________________________________________________________________________________________/POLICES/___________________________________________________________________________________________________________________*/
+
+@font-face{font-family: 'Roboto-Light'; src: url('Polices/Roboto-Light.ttf');}
+@font-face{font-family: 'Roboto-LightItalic'; src: url('Polices/Roboto-LightItalic.ttf');}
+@font-face{font-family: 'Roboto-Regular'; src: url('Polices/Roboto-Regular.ttf');}
+@font-face{font-family: 'Roboto-Italic'; src: url('Polices/Roboto-Italic.ttf');}
+@font-face{font-family: 'Roboto-Medium'; src: url('Polices/Roboto-Medium.ttf');}
+@font-face{font-family: 'Roboto-Condensed'; src: url('Polices/Roboto-Condensed.ttf');}
+@font-face{font-family: 'Roboto-CondensedItalic'; src: url('Polices/Roboto-CondensedItalic.ttf');}
+@font-face{font-family: 'Roboto-BoldCondensed'; src: url('Polices/Roboto-BoldCondensed.ttf');}
+@font-face{font-family: 'Roboto-BoldCondensedItalic'; src: url('Roboto-BoldCondensedItalic.ttf');}
+@font-face{font-family: 'Roboto-Bold'; src: url('Polices/Roboto-Bold.ttf');}
+@font-face{font-family: 'ClementePDab-HairlineItalic'; src: url('ClementePDab-HairlineItalic.ttf');}
+
+/*___________________________________________________________________________________________________________________/FIN POLICES/___________________________________________________________________________________________________________________*/
+
+body{
+	background-image: url("images/circuits3b.png");
+	background-attachment: scroll;
+	background-repeat: repeat;
+	margin: 0;
+	width: 100%;
+}
+
+main{
+	margin: 0% 20% 0%;
+}
+/*___________________________________________________________________________________________________________________/HEADER/___________________________________________________________________________________________________________________*/
+
+.chev{
+	font-size: 1.3em;
+}
+#titre_principal{
+	display: inline-block;
+	color: white;
+	font-family: "Trebuchet MS", Arial, sans-serif;
+	font-size: 0.8em;
+	width: 100%;
+	margin: 0;
+}
+header{
+	background-color: mediumpurple;
+	text-align: center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	border-bottom: 15px double white;
+	margin: 0% 0% 5% 0%;
+}
+/*___________________________________________________________________________________________________________________/FIN HEADER/___________________________________________________________________________________________________________________*/
+
+h2{
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	font-size: 1.8em;
+	text-align: center;
+	color: mediumpurple;
+	background-color: white;
+	border: 4px double mediumpurple;
+	margin: 15% 0% 5%;
+}
+
+.p_center{
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	font-size: 0.9em;
+	text-align: center;
+}
+
+p{
+	font-family: "Roboto-Regular", Arial, "Time New Roman", sans-serif;
+	font-size: 0.9em;
+}
+
+.img_conteneur{
+	width: 600px;
+}
+
+#conteneur2{
+    display: flex;
+}
+#conteneur3{
+    display: flex;
+	flex-direction: column;
+}
+#conteneur4{
+    display: flex;
+	flex-direction: column-reverse;
+}
+#conteneur5{
+    display: flex;
+	flex-wrap: nowrap;
+}
+#conteneur6{
+    display: flex;
+	flex-wrap: wrap;
+}
+#conteneur7{
+    display: flex;
+	flex-wrap: wrap-reverse;
+}
+
+/*___________________________________________________________________________________________________________________/Navigation/___________________________________________________________________________________________________________________*/
+
+/*___________________________________________________________________________________________________________________/MENU TITRE/___________________________________________________________________________________________________________________*/
+nav{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	margin: 0px;
+}
+nav ul{
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+}
+nav li{
+	display: inline-block;
+	border-top: 2px solid #7458ad;
+	border-bottom: 2px solid #7458ad;
+	margin: 0px 0px 0px -4px;
+	padding: 0px;
+	border-left:1px solid black;
+}
+nav a{
+	font-size: 1em;
+	font-weight: bold;
+	color: white;
+	font-family: "Trebuchet MS", Arial, "Comic Sans MS", sans-serif;
+	text-decoration: none;
+}
+nav ul li a{
+	float:left; 
+	background:mediumpurple url('images/menuviolet1e.png') repeat-x;
+	width: 150px;
+	line-height:30px; /*hauteur de l'image de fond*/
+}
+nav ul li a:hover {
+	background:mediumpurple url(images/menuviolet2d.png) repeat-x;
+	color:white;
+}
+/*___________________________________________________________________________________________________________________/FIN MENU TITRE/___________________________________________________________________________________________________________________*/
+
+/*___________________________________________________________________________________________________________________/Navigation/___________________________________________________________________________________________________________________*/
+
+
+
+
+
+
+
+@media all and (max-device-width: 500px)
+{
+    #titre_principal 
+    {
+      font-size: 0.7em;
+    }
+  
+    nav ul li a
+	{
+		font-size: 0.7em;
+		width: 75px;
+		line-height: 15px; /*hauteur de l'image de fond*/
+	}
+}
+
+@media (orientation: landscape) and (max-device-width : 900px) 
+{
+	nav ul li a
+	{
+		width: 150px;
+		line-height: 30px; /*hauteur de l'image de fond*/
+	}
+}

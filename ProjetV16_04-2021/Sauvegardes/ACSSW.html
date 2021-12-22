@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<!-- Type de document -->
+<html lang='fr-fr'>
+<!-- HyperText Markup Language(language de balisage d'hypertexte). Balise principale du code. -->
+	<head>
+		<!-- En-tête de page. -->
+		<meta charset='utf-8'/>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'/>
+		<!-- Balise d'encodage. -->
+		<link rel='stylesheet' href='ACSSWstyle.css'/>
+		<!-- Balise qui indique que ce fichier HTML est associé à un fichier "style.css" qui est chargé de la mise en forme. -->
+		<title>Créer son site web</title>
+	</head>
+	
+	<body>
+		<!-- Corps de la page. -->
+		<!-- Les balises header, footer, nav, section, aside, article sont encore assez peu d'utilisées. On pourrait très bien utiliser des balises
+		génériques <div> à la place pour englober les différentes portions de notre contenu. D'ailleurs, c'est comme cela qu'on faisait
+		avant l'arrivée de ces nouvelles balises HTML5.
+		Néanmoins, il est assez probable que, dans un futur proche, les ordinateurs commencent à tirer parti intelligemment de ces
+		nouvelles balises. On peut imaginer par exemple un navigateur qui choisisse d'afficher les liens de navigation <nav> de manière
+		toujours visible ! Quand l'ordinateur « comprend » la structure de la page, tout devient possible.
+		Ces balises ne sont reconnues par Internet Explorer que depuis sa version 9(IE9).
+		Cela peut heureusement se régler assez facilement à l'aide d'un script JavaScript.-->
+		<header>
+		<!-- En-tête du site (logo,bannière,slogan,etc.) -->
+			<div id="titre_principal">
+				<h1><span class='chev'>&lt;!--</span> Créer son site web </span><span class='chev'>--&gt;</span></h1>
+			</div>
+				<nav>
+					<ul>
+						<li style='border-left: none;'><a href='ACSSW.html'>Accueil</a></li>
+						<li><a href='balises.html'>Balises html</a></li>
+						<li><a href='codecss.html'>CSS</a></li>
+						<li><a href='gridlayout.html'>Grid layout</a></li>
+						<li><a href='flexbox.html'>Flexbox</a></li>
+						<!-- rel="noopener" Pour empêcher qu'un objet Javascript windows.opener soit utilisé pour la page ouverte -->
+					</ul>
+				</nav>
+		</header>
+		<footer>
+		<!-- Pied de page (liens de contact, nom de l'auteur, mentions légales, etc.) -->
+		</footer>
+		<nav>
+		<!-- La balise < nav > doit regrouper tous les principaux liens de navigation du site. Vous y placerez par exemple le menu principal de votre site.
+		Généralement, le menu est réalisé sous forme de liste à puces à l'intérieur de la balise <nav>.
+			Ex: Code : HTML
+			<nav>
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+					<li><a href="forum.html">Forum</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+			</nav> -->
+		</nav>
+		<section>
+		<!-- La balise <section> sert à regrouper des contenus en fonction de leur thématique. Elle englobe généralement une portion du contenu au centre de la page.
+			Ex: Code : HTML
+			<section>
+				<h1>Ma section de page</h1>
+				<p>Bla bla bla bla</p>
+			</section> -->
+		</section>
+		<aside>
+		<!-- La balise <aside> est conçue pour contenir des informations complémentaires au document que l'on visualise. Ces
+		informations sont généralement placées sur le côté (bien que ce ne soit pas une obligation). 
+		Il peut y avoir plusieurs blocs <aside> dans la page. -->
+		</aside>
+		<article>
+		<!-- La balise <article> sert à englober une portion généralement autonome de la page. C'est une partie de la page qui pourrait
+		ainsi être reprise sur un autre site. C'est le cas par exemple des actualités (articles de journaux ou de blogs). -->
+		</article>
+			<p>
+			Vous débutez et vous avez peur que ce soit bien trop compliqué. Enlevez-vous cette idée de la tête! Ce cours vous expliquera comment tout cela fonctionne de manière simple et avec des exemples clairs. Pour commencer vous aurez simplement besoin d'un éditeur de texte comme Bloc-Notes (le logiciel d'édition de texte intégré par défaut à Windows).<br />
+			En effet on pourrait tout à fait créer un site web uniquement avec Bloc-Notes, mais il existe des logiciels plus puissants et personne n'utilise vraiment Bloc-Notes.<br />
+			Nous allons utiliser pour ce cours Notepad++, c'est l'un des plus utilisés sous Windows. <a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener">Site Notepad++</a>
+			</p>
+		<h2 id="sommaire">Sommaire</h2>
+		<ol class="ol">
+			<li><h4><a style="color: white;" href="#html5">HTML5</a></h4></li>
+			<li><a href="#structuredebase">Structure de base d'une page HTML5</a></li>
+			<li><a href="#balises">Les balises</a></li>
+			<li><a href="#attributs">Les attributs</a></li>
+			<li><a href="#commentaires">Les commentaires</a></li>
+			<li><h4><a style="color: white;" href="#css3">CSS3</a></h4></li>
+			<li><a href="#ouecritonlecss">Où écrit-on le CSS</a></li>
+		</ol>
+		
+		<h2 id="html5" style="text-align: center;">HTML5</h2>
+			<p>
+			Le HTML (HyperText Markup Language) définit le contenu du site, vous pouvez très bien créer un site web uniquement en HTML, mais celui-ci ne sera pas très beau : l'information apparaîtra « brute ». C'est pour cela que le langage CSS vient toujours le compléter.
+			Le CSS permet, lui, d'arranger le contenu et de définir la présentation : couleurs, image de fond, marges, taille du texte… Comme vous vous en doutez, le CSS a besoin d'une page HTML pour fonctionner. C'est pour cela que nous allons d'abord apprendre les bases 
+			du HTML avant de nous occuper de la décoration en CSS. Vos premières pages ne seront donc pas les plus esthétiques, mais qu'importe ! Cela ne durera pas longtemps.
+			</p>
+		<h3 id="structuredebase">1. Structure de base d'une page HTML5</h3>
+			<p>
+			Ce code correspond à la base d'une page web en HTML5 :<br />
+			<img src="images/structurehtml.png" alt="Base d'une page web HTML5" "width=300 height=75"/>
+			</p>
+		<h3 id="balises">2. Les balises</h3>
+			<p>
+			Les pages HTML sont remplies de ce qu'on appelle des balises. Celles-ci sont invisibles aux visiteurs, mais elles permettent à l'ordinateur de comprendre ce qu'il doit afficher.<br /> 
+			Les balises se repèrent facilement. Elles sont entourées de chevrons, c'est à dire des symboles < et >, comme ceci < balise>.<br />
+			À quoi est-ce qu'elles servent? Elles indiquent la nature du texte qu elles encadrent. Elles veulent dire par exemple:<br />
+			< Ceci est le titre ><br />
+			<em>(< title >Mon titre< /title >  Début et fin du titre.)</em><br />
+			< Ceci est une image ><br />
+			<em>(< img />)</em><br />
+			< Ceci est un paragraphe ><br />
+			<em>(< p >Texte< /p > Début et fin du texte.)</em><br />
+			</p>
+			<h5>On distingue deux types de balises:</h5>
+			<p>-Les balises en paires:<br />
+			elles s'ouvrent contiennent du texte, et se ferment plus loin.<br />
+			ex: 1 <em>< title >Ceci est un titre< /title ></em><br />
+			On distingue sur cet exemple une balise ouvrante < title > et une balise fermante < /title > (avec un slash) qui indique que le titre se termine. Cela signifie que pour l'ordinateur tout ce qui n'est pas entre ces deux balises n'est pas un titre.<br />
+			<br />
+			-Les balises orphelines:<br />
+			ce sont des balises qui servent le plus souvent à insérer un élément à un endroit précis, comme par exemple < br  / > (retour à la ligne) ou une image < img/ >. Il n'est pas nécessaire de délimiter le début et la fin de l'image, on veut juste dire à l'ordinateur << insère une image ici >><br />
+			ex: 1 <em>< img src="Emplacement/NomImage.jpg" /></em><br />
+			src indique où se trouve l'image que l'on veut insérer, soit par un chemain absolu <em>< img src="https://www.site.com/fleur.png" /></em>, soit par un chemin en relatif (si l'image montagne.jpg est dans un sous-dossier images) <em>< img src="images/montagne.jpg" /></em>.
+			</p>
+		<h3 id="attributs">3. Les attributs</h3>
+			<p>
+			Les attributs sont un peu les options des balises. Ils viennent les compléter pour donner des informations supplémentaires. L'attribut se place après le nom de la balise ouvrante et a le plus souvent une valeur comme ceci:<br />
+			1 < NomBalise attribut="valeur" ><br />
+			Avec la balise < img/ > par exemple cela donne:<br />
+			1 <em>< img src="image.jpg" /></em> L'ordinateur comprend alors qu'il doit afficher l'image contenue dans le fichier image.jpg<br />
+			<br />
+			Dans le cas d'une balise fonctionnant par paire on ne met les attributs que dans la balise ouvrante et pas dans la balise fermante. Par exemple ce code indique que la citation est de Neil Armstrong et qu'elle date du 21 juillet 1969. (Cette balise est fictive)<br />
+			1 < citation  auteur="Neil  Armstrong"  date="21/07/69" ><br />
+			2 C'est un petit pas pour l'homme, mais un bond de géant pour l'humanité.<br />
+			3 < /citation >
+			</p>
+		<h3 id="commentaires">4. Les commentaires</h3>
+			<p>
+			Un commentaire en html est une texte qui sert simplement de mémo pour vous mais aussi pour les personnes qui liront le code source de votre page. Il n'est pas lu par l'ordinateur, et ne change rien à l'affichage de la page.<br />
+			La balise se présente ainsi < !-- Ceci est un commentaire -- >:
+			<ol>
+				<li>< !DOCTYPE html ></li>
+				<li>< html ></li>
+				<li>&emsp; < head ></li>
+				<li>&emsp;&emsp; <em>< !-- En-tête de la page -- ></em></li>
+				<li>&emsp;&emsp; < meta charset="utf-8"/ ></li>
+				<li>&emsp;&emsp; < title >Titre< /title ></li>
+				<li>&emsp; < /head ></li>
+			</ol>
+			</p>
+		<h2 id="css3" style="text-align: center;">CSS3</h2>
+			<p>
+			Après avoir passé toute une première partie du cours à ne travailler que sur le HTML, nous allons maintenant découvrir le CSS que j'avais volontairement mis à l'écart. Le CSS n'est pas plus compliqué que le HTML. Il vient le compléter pour vous aider à
+			mettre en forme votre page web (c'est à dire choisir la couleur et la taille de votre texte, la police utilisée sur votre site, définir les bordures, le fond, etc). Dans ce premier chapitre sur le CSS, nous allons voir la théorie sur le CSS : qu'est-ce que c'est ? À quoi cela ressemble-t-il ? Où est-ce qu'on écrit du code CSS ? Ces aspects théoriques ne sont pas bien compliqués mais 
+			vous devez obligatoirement les connaître car c'est la base du CSS. C'est d'ailleurs la seule chose que je vous demanderai de retenir par coeur en CSS.
+			</p>
+		<h3 id="ouecritonlecss">5. Où écrit-on le CSS</h3>
+			<p>
+			Vous avez le choix car on peut écrire du code en langage CSS à trois endroits différents :<br />
+			<br />
+			1. dans un fichier .css (méthode la plus recommandée);<br />
+			2. dans l'en-tête < head > du fichier HTML;<br />
+			3. directement dans les balises du fichier HTML via un attribut style (méthode la moins recommandée).<br />
+			<br />
+			Je vais vous présenter ces trois méthodes mais sachez d'ores et déjà que la première… est la meilleure;
+			</p>
+		<a class='retourmenu' href='#sommaire'><img class='bas' src='images/fleche.png' alt='Retour au menu' title='Retour au menu'/><br/>Menu</a>
+		</body>
+</html>
+			
